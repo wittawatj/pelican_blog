@@ -1,0 +1,58 @@
+body {
+  font-family:  sans-serif;
+  color: #252525;
+}
+
+
+theorem, proof , lemma{
+  display: block;
+  margin: 12px 0;
+  padding: 0.5em;
+  border: 1px dotted black;
+}
+theorem {
+  font-style: italic;
+}
+theorem:before {
+  content: "Theorem. ";
+  font-weight: bold;
+  font-style: normal;
+}
+proof:before {
+  content: "Proof.";
+  font-style: italic;
+}
+proof:after {
+  content: "\25FB";
+  float:right;
+}
+
+definition {
+
+  display: block;
+  margin: 12px 0;
+  padding: 0.5em;
+  font-style: normal;
+  
+  border: 1px dotted black;
+}
+
+definition:before {
+  content: "Definition.";
+  font-weight: bold;
+  font-style: normal;
+}
+
+lemma {
+  font-style: italic;
+}
+
+lemma:before {
+
+  content: "Lemma.";
+  font-weight: bold;
+  font-style: normal;
+}
+
+img {
+}
