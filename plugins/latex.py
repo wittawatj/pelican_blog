@@ -23,7 +23,7 @@ latexScript = """
                displayMath: [ [\'$$\',\'$$\'] ],
                processEscapes: true },
            "HTML-CSS": {
-               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "#001574 ! important"}}
            }
        });
     </script>
