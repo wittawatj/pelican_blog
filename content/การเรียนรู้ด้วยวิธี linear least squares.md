@@ -1,0 +1,26 @@
+Title: การเรียนรู้ด้วยวิธี linear least squares 
+Date: 2010-07-10 15:12:25
+Tags: least squares, supervised learning 
+Slug: การเรียนรู้ด้วยวิธี linear least squares 
+
+
+เป้าหมายหนึ่งของงานในด้าน supervised learning หรือการเรียนรู้แบบมีผู้สอน ก็คือการประมาณค่าของ function (real-valued function) จริงจากข้อมูลที่สุ่มมาได้ (sample) <img class="aligncenter" title="Least squares" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Linear_least_squares2.png/499px-Linear_least_squares2.png" alt="" width="346" height="415" />จากภาพ (จาก <a href="http://en.wikipedia.org/wiki/Least_squares">http://en.wikipedia.org/wiki/Least_squares</a>) จุดแดงคือข้อมูลที่สุ่มมา เส้นน้ำเงินคือ function ที่ประมาณขึ้นมาได้จากข้อมูล วิธีหนึ่งในการประมาณค่า function คือ Linear least-squares ไอเดียคือ พยายามหา function ที่ทำให้ผลรวมของระยะห่างจากจุดแต่ละจุดมายัง function นั้นน้อยที่สุด (จริงๆแล้วคือระยะห่างกำลังสอง) ระยะห่างแต่ละจุดมาถึง function พูดง่ายๆก็คือ error นั่นเอง ถ้าระยะห่างทุกจุดเป็น 0 ก็แปลว่า function เราผ่านทุกจุดเป๊ะๆ
+
+สมมติว่าเรามี [latex]n [/latex] จุด (ตัวอย่าง) กำหนดให้ [latex] (x_i, y_i)[/latex] เป็นตัวอย่างที่ i เราพยายามจะหา function ในรูปของ
+<p style="text-align: center;">[latex] \hat{f}(x) = \sum_{j=1}^b \alpha_j \varphi_j(x) [/latex]</p>
+<p style="text-align: left;">เมื่อ [latex] \varphi_j(x) [/latex] คือสิ่งที่เรียกว่า basis function ที่รับ x แล้วคืนค่าเป็นจำนวนจริง ซึ่งเราสามารถเลือกเป็นอะไรก็ได้ มีทั้งหมด b basis function จากไอเดียของ lineat least-squares เราอยากหา [latex] \hat{f}(x)[/latex] ที่ทำให้ผลรวม error น้อยสุด ในเมื่อ basis function ของเรากำหนดตายตัวไปแล้ว ปัญหาจึงลดลงไปเป็นการหา [latex] \alpha_j[/latex] ทั้งหมดที่ทำให้ผลรวม error น้อยสุด ดังนี้ (เรียก [latex] \alpha_j[/latex] ดังกล่าวว่า [latex] \hat{\alpha}_j[/latex])</p>
+<p style="text-align: center;">[latex] \hat{\boldsymbol \alpha} = \arg \min_{\boldsymbol \alpha} \sum_{i=1}^n (\hat{f}(x_i) - y_i)^2 [/latex]</p>
+<p style="text-align: left;">ในสมการข้างบน [latex]\arg \min_{\boldsymbol \alpha}[/latex] แปลว่า หา [latex]\boldsymbol \alpha[/latex] ที่ทำให้สิ่งที่ตามมามีค่าน้อยที่สุด ในที่นี้ [latex]\boldsymbol \alpha = (\alpha_1, \alpha_2, \ldots, \alpha_b)^T[/latex] เป็น vector ของ [latex]\alpha_j[/latex] ทั้งหมด เขียนเป็น vector จะได้สะดวก ต่อมาจากข้างบนแทนนิยามของ function ลงไปเราจะได้</p>
+<p style="text-align: center;">[latex]\hat{\boldsymbol \alpha} = \arg \min_{\boldsymbol \alpha} \sum_{i=1}^n (\sum_{j=1}^b \alpha_j \varphi_j(x_i) - y_i)^2[/latex]</p>
+<p style="text-align: left;">ถ้าเรากำหนดให้ [latex] \boldsymbol X_{i,j} = \varphi_j(x_i) [/latex] โดยที่ [latex] \boldsymbol X_{n \times b} [/latex] เป็น matrix แล้วสมการข้างบนจะสามารถเขียนได้เป็น</p>
+<p style="text-align: center;">[latex]\hat{\boldsymbol \alpha} = \arg \min_{\boldsymbol \alpha} \| (\boldsymbol X \boldsymbol \alpha - \boldsymbol y) \|^2[/latex]</p>
+<p style="text-align: left;">โดยที่ [latex]\boldsymbol y = (y_1, y_2, \ldots, y_n)^T [/latex] เป็น vector ของค่า y ทั้งหมด ต่อไปเราก็ diff ค่าข้างบนนั่นเทียบกับ [latex]\boldsymbol \alpha [/latex] แล้วจับเท่ากับ 0 (การ diff เทียบกับ vector สามารถหาดูได้ที่ <a href="http://matrixcookbook.com">matrixcookbook.com</a>) เราจะได้</p>
+<p style="text-align: center;">[latex]2\boldsymbol X^T (\boldsymbol X \boldsymbol \alpha - \boldsymbol y) = 0[/latex]</p>
+<p style="text-align: left;">จัดรูปไปมา เราจะได้</p>
+<p style="text-align: center;">[latex]\hat{\boldsymbol \alpha} = (\boldsymbol X^T \boldsymbol X)^{-1} \boldsymbol X^T \boldsymbol y[/latex]</p>
+<p style="text-align: left;">จะเห็นว่าเราสามารถหา parameter ที่ดีที่สุดในแง่ของ Least-squares ได้โดยการคูณ matrix เมื่อเราได้ [latex]\hat{\boldsymbol \alpha}[/latex] แล้วที่เหลือก็แค่แทนลงไปในนิยามของ [latex]\hat{f}(x)[/latex] ข้างบน เราก็ได้ function แล้ว สังเกตว่าถึงเราจะเรียกว่า linear least squares แต่ [latex]\varphi_j(x)[/latex] จะเป็น function ที่ไม่ linear กับ x ก็ได้ เช่น log คำว่า linear least squares ในที่นี้คือ function ที่ได้นั้น linear เมื่อเทียบกับ parameter นั่นคือ [latex]\boldsymbol \alpha[/latex]</p>
+<p style="text-align: left;">ถ้าเลือก basis function ดีๆหลากหลายหน่อย เราสามารถประมาณค่า function ได้หลากหลายมาก วิธีนี้ดูเผินๆแล้วน่าจะดี แต่จริงๆแล้ว function ที่ได้มักจะมีปัญหาที่เรียกว่า overfit หรือประมาณค่าใกล้กับข้อมูลมากจนเกินไป (เกิดขึ้นเมื่อมี basis function เยอะ จนสามารถประมาณค่า function อะไรก็ได้) นั่นหมายความว่าถ้าข้อมูลที่เราได้มามี noise มาก เช่น ได้จากเครื่องมือวัดค่าที่เก่าแล้ว คลาดเคลื่อนบ่อย function ที่เราได้มันก็จะซิกแซกไปตามจุดพวกนั้นด้วย ซึ่งในความเป็นจริงเราไม่อยากได้</p>
+<p style="text-align: left;">ตัวอย่างคือรูปนี้ <a href="http://upload.wikimedia.org/wikipedia/commons/5/5d/Overfit.png">http://upload.wikimedia.org/wikipedia/commons/5/5d/Overfit.png</a> จะเห็นว่ามี 2 เส้น เส้นโค้งกับเส้นตรง ซึ่งได้จากข้อมูลชุดเดียวกันแต่ basis function ต่างกัน ในความเป็นจริงเราอยากได้เส้นตรง ถึงแม้เส้นโค้งจะผ่านทุกจุดเป๊ะ แต่เห็นได้ชัดว่าข้อมูลมีโครงสร้างเชิงเส้น ที่จุดพวกนั้นไม่เรียงเป็นแนวเส้นตรงน่าจะเกิดจาก noise มากกว่า ด้วยเหตุนี้เราจึงกล่าวว่าเส้นโค้งฟิตกับข้อมูลมากไปหรือ overfit นั่นเอง วันหลังจะมีพูดถึงวิธีแก้ปัญหา overfit</p>
+<p style="text-align: left;">จบแล้ว หากผู้รู้จริงผ่านมาแล้วมีคำแนะนำก็เชิญ comment ครับ</p>
+
+<div id="_mcePaste" style="overflow: hidden; position: absolute; left: -10000px; top: 758px; width: 1px; height: 1px;">\sum_{j=1}^b \alpha_i \varphi_j(x)[</div>
