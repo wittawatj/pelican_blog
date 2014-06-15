@@ -1,0 +1,106 @@
+Title: การใส่รูปจำนวนมากใน Latex โดยใช้ subfig  
+Date: 2012-01-12 05:50:52
+Tags: latex 
+Slug: การใส่รูปจำนวนมากใน Latex โดยใช้ subfig  
+
+
+การใส่รูปใน Latex แบบปกติก็ใช้
+
+	:::Latex
+	\begin{figure}[hbt]
+	\includegraphics[width=0.9\textwidth]{figure_name.here}
+	\caption{A caption goes here}
+	\label{fig:label}
+	\end{figure}
+
+ก็ได้แล้ว หากมีรูปจำนวนมากที่ต้องการใส่ในเอกสารก็ใช้คำสั่งข้างต้นหลายๆครั้งก็ได้ แต่ปัญหาที่เกิดขึ้นคือรูปแต่ละรูปจะมีเบอร์เป็นของตัวเอง ทำให้อ้างอิงลำบาก ตัวอย่างเช่น ทำการทดลองบนข้อมูล 20 ชุด ได้กราฟมา 20 อัน แล้วอยากใส่กราฟพวกนี้ลงในเอกสาร แต่เวลาเขียนคำอธิบายกราฟเหล่านี้เราไม่อยากเขียนแบบนี้
+<blockquote>The results are shown in Figure 1, Figure 2, Figure 3, ...</blockquote>
+ไม่น่าดูเท่าไหร่ จะดีกว่าถ้าเราสามารถใส่แต่ละกราฟให้เป็น sub-figure ของ figure ใหญ่ แล้วอ้าง figure ใหญ่อันเดียว
+<blockquote>The results are shown in Figure 1.</blockquote>
+แล้วแต่ละกราฟมีเบอร์เป็น Figure 1(a), Figure 1(b),.. เป็นต้น อ้างอิงง่าย และรูปที่เกี่ยวกันอยู่กันเป็นกลุ่มด้วย วิธีคือให้ใช้ package ชื่อ subfig เริ่มด้วยการใส่ import package ด้วย
+
+	\usepackage[lofdepth,lotdepth]{subfig} 
+
+lofdepth, lotdepth ใส่เพื่อให้ sub-figure เหล่านี้แสดงขึ้นมาใน List of figures, หรือ List of tables จากนั้นใส่รูปด้วยคำสั่ง
+
+	:::Latex
+	\begin{figure}[hbt]
+	\centering
+	\subfloat[คำอธิบายรูป a]{
+	\includegraphics{fig1a.file}
+	\label{fig1a}
+	}
+	\subfloat[คำอธิบายรูป b]{
+	\includegraphics{fig1b.file}
+	\label{fig1b}
+	}
+	\\
+	\subfloat[คำอธิบายรูป c]{
+	\includegraphics{fig1c.file}
+	\label{fig1c}
+	}
+	\subfloat[คำอธิบายรูป d]{
+	\includegraphics{fig1d.file}
+	\label{fig1d}
+	}
+	\caption{ตรงนี้เป็นคำอธิบายทั้งกลุ่ม 4 รูป}
+	\label{fig:label}
+	\end{figure}
+
+หากจะอ้างรูปใหญ่ก็ใช้ ref{fig:label} จะอ้างรูปย่อยๆ เช่นรูป (a) ก็ใช้ ref{fig1a} เป็นต้น
+
+วิธีนี้ก็ยังมีปัญหาอีกสำหรับกรณีที่มีรูปเยอะมาก เพราะตามหลัก figure environment ต้องสามารถแสดงได้ใน 1 หน้ากระดาษ ถ้ามีรูปเยอะจนไม่สามารถใส่ได้ภายใน figure environment เดียว ก็ต้องแยกเป็นหลายๆ figure แบบนี้ (สมมติว่า 1 กระดาษแสดงได้แค่ 2 รูป)
+
+	:::Latex
+	\begin{figure}[hbt]
+	\centering
+	\subfloat[คำอธิบายรูป a]{
+		\includegraphics{fig1a.file}
+		\label{fig1a}
+	}\\
+	\subfloat[คำอธิบายรูป b]{
+		\includegraphics{fig1b.file}
+		\label{fig1b}
+	}\\
+	\caption{ตรงนี้เป็นคำอธิบายรูป (a) และ (b)}
+	\label{fig:label}
+	\end{figure}
+
+	\begin{figure}[hbt]
+	\ContinuedFloat
+	\centering
+	\subfloat[คำอธิบายรูป c]{
+		\includegraphics{fig1c.file}
+		\label{fig1c}
+	}\\
+	\subfloat[คำอธิบายรูป d]{
+		\includegraphics{fig1d.file}
+		\label{fig1d}
+	}\\
+	\caption[]{ตรงนี้เป็นคำอธิบายรูป (c) และ (d)}
+	\label{fig:label} % label ตรงนี้ต้องเหมือนข้างบน
+	\end{figure}
+
+การใส่คำสั่ง
+
+	\ContinuedFloat
+
+จะทำให้เบอร์ของ sub-figure นับต่อไป ไม่เริ่มใหม่ที่ (a) เท่านี้ก็จะได้ 4 รูป โดยใช้ 2 หน้า จะเห็นว่า figure environment อันที่สองมี label เหมือนกับอันแรกและ caption มีการใส่ option ว่างๆ(ตรง "[]") ถ้าไม่ใส่ option ว่างๆที่ว่านี้ จะทำให้เกิด entry ใหม่ใน List of figures ซึ่งไม่ใช่สิ่งที่อยากได้ เพราะถ้าเรามองว่ารูปทั้งหมดเกี่ยวเนื่องกัน ก็ไม่จำเป็นต้องมี entry ใหม่ ให้ทั้งหมดอยู่ภายใต้ entry เดียวกันคือ entry ที่มีคำอธิบายเป็น caption อันแรก
+
+ปัญหายังไม่จบแค่นี้ เพราะเบอร์ของรูปย่อยเป็นแค่ (a), (b), (c),... ซึ่งเวลามันลอยอยู่ในเอกสารอาจจะไม่รู้เรื่องว่ารูปย่อยอันไหนอยู่ภายใต้รูปใหญ่อันไหน ทางที่ดีคือควรแก้ (a), (b), (c),.. ให้เป็นเบอร์เต็มๆคือ 1 (a), 1 (b), 1 (c),... จะเข้าใจง่ายกว่า (ในตัวอย่างนี้เบอร์ของรูปใหญ่คือเบอร์ 1) วิธีคือให้ใส่คำสั่งนี้ที่ต้นเอกสาร
+
+	\renewcommand{\thesubfigure}{\thefigure{} \alph{subfigure}}
+
+แค่นี้ก็ได้แล้ว เพิ่มเติมคือถ้าเขียนแบบนี้
+
+	\renewcommand{\thesubfigure}{\alph{subfigure}}
+
+ก็จะกลับมาเป็นเหมือนเดิมคือ แสดงแค่ (a),(b),(c),...
+
+ที่มา
+<ul>
+	<li><a href="http://www.latex-community.org/forum/viewtopic.php?f=45&amp;t=4250">http://www.latex-community.org/forum/viewtopic.php?f=45&amp;t=4250</a></li>
+	<li><a href="http://stackoverflow.com/questions/1078370/subfigs-of-a-figure-on-multiple-pages">http://stackoverflow.com/questions/1078370/subfigs-of-a-figure-on-multiple-pages</a></li>
+	<li><a href="http://www.peteryu.ca/tutorials/publishing/latex_captions">http://www.peteryu.ca/tutorials/publishing/latex_captions</a></li>
+	<li><a href="http://texblog.org/2011/05/24/placing-figures-side-by-side-subfig/">http://texblog.org/2011/05/24/placing-figures-side-by-side-subfig/</a></li>
+</ul>

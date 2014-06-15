@@ -1,0 +1,7 @@
+Title: Java Regular Expression 2 
+Date: 2008-04-07 09:21:00
+Tags:  
+Slug: Java Regular Expression 2 
+
+
+หลังจากที่ลองเล่น class ใน java.util.regex กับ regular expression (RE) ไปซักพักก็พบว่า บางกรณีมัน match ช้าเหลือเกิน รอกันเป็นนาทีต่อการ match หนึ่งครั้ง ก็เลยไปลองๆหา ก็เจอ<a href="http://www.javaworld.com/javaworld/jw-09-2007/jw-09-optimizingregex.html?page=1">บทความหนึ่งในเว็บjava world</a> เขียนเรื่องการ optimize  RE ให้ทำงานเร็วขึ้น<br /><br />จากบทความข้างต้นทำให้ทราบว่า:<br /><ul><li>การทำงานของ engine ที่ใช้ในการ match RE ของ java เป็น NFA (Nondeterministic Finite Automata)</li><li>ระหว่างการ match มีการ ทำ backtracking</li><li>การบอกว่า pattern ใดๆ match กับสตริงง่ายกว่า (ใช้เวลาน้อยกว่า) การบอกว่ามันไม่ match</li></ul>วิธีง่ายๆในการ optimize RE:<br /><ul><li>หลีกเลี่ยงการใช้ Pattern.compile() แบบซ้ำๆ ควรเก็บ object Matcher เอาไว้หากต้อง match pattern เดิมซ้ำๆ (เรียก reset() บน object Matcher ก่อนด้วยนะ)</li><li>หากจำเป็นต้องใช้ | ควรจะเอาสิ่งที่น่าจะเกิดบ่อยไว้ข้างหน้า เช่น เราต้องการ match x หรือ y และเรารู้ว่า x เกิดบ่อยมากกว่า y เราควรเขียน RE ว่า X | Y ในทางทฤษฎี X | Y เหมือนกับ Y | X แต่ในทางปฏิบัติ X | Y ทำงานเร็วกว่า ถ้า X เกิดขึ้นบ่อยว่า Y มาก</li><li>ดึง prefix ร่วมหรือ suffix ร่วมถ้าเป็นไปได้ เช่น abc | abg เราควรเขียนเป็น ab(c | g) จะทำงานเร็วกว่า</li></ul> ยังมีรายละเอียดอีก ในหน้านั้นถ้าอยากรู้ก็ลองเปิดดูต่อนะ :P<br /><br />ที่มา:<a href="http://www.javaworld.com/javaworld/jw-09-2007/jw-09-optimizingregex.html?page=4">http://www.javaworld.com/javaworld/jw-09-2007/jw-09-optimizingregex.html?page=4</a>

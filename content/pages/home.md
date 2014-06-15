@@ -4,7 +4,7 @@ save_as: index.html
 slug: index
 
 <p>
-I am a first-year research student at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
+I am a first-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
 I received M.Eng. from <a href="http://www.titech.ac.jp/english/">Tokyo Institute of Technology</a> where I worked with <a href="http://sugiyama-www.cs.titech.ac.jp/~sugi/index.html">Masashi Sugiyama</a> on <a href="pages/l1lsmi.html">supervised feature selection using squared-loss mutual information</a>. 
 Before that I was a research assistant working with <a href="http://www.siit.tu.ac.th/professor_en.php?id=43">Thanaruk Theeramunkong</a> 
 on a Thai news relations discovery project.
@@ -28,7 +28,7 @@ document.write(".ac.uk");
 </p>
 
 <p>
-Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>.
+Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. Blog post <a href="archives.html">archives</a>.
 </p>
 
 <p>

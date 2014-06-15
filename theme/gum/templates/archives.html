@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Archives for {{ SITENAME }}</h1>
+
+<!--
+<dl>
+{% for article in dates %}
+    <dt style="">{{ article.locale_date }}</dt>
+    <dd style=""><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+{% endfor %}
+</dl>
+-->
+
+
+<style>
+ul#article_list {
+
+	list-style: none;
+}
+.article_date {
+	font-weight: strong;
+	text-align: right;
+	margin-right: 1em;
+	display: inline-block;
+	width: 17em;
+}
+</style>
+<ul id="article_list">
+{% for article in dates %}
+    <li> <span class="article_date">{{ article.locale_date }}</span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a> </li>
+    
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+Title: C# for Java Programmers
+Date: 2014-04-09
+Slug: csharp-for-java-programmer
+Tags: C#, Java
+
+I recently need to use Infer.net, a Bayesian inference package written in C#. For that, I need to pick up C#. This is a summary of an article on Microsoft web site ["The C# Programming Language for Java Developers"](http://msdn.microsoft.com/en-us/library/ms228602(v=vs.90).aspx). 
+
+### Source File
+
+* Source files can contain more than one top-level public class declaration, and the file name does not need to match any of the classes' names.
+
+* `namespace` in C# is roughly equivalent to the concept of packages in Java.
+
+* To access classes defined in a namespace external to the current one, use the `using` directive followed by the namespace name. Much like `import some.thing.*` in Java.
+
+* C# does allow multiple namespaces in a single .cs file.
+
+### Data Types
+
+* `boolean` in Java is called `bool` in C#.
+
+* C# represents all primitive data types as objects, it is possible to call an object method on a primitive data type.
+
+* In C#, developers can use the == or != operators to compare string values directly.
+
+* `@"some string with \"`. The @ in front of a String declares the string verbatim, avoiding the need for string escaping.
+
+### Operators
+
+* Overflow can be checked or ignored for a given integral arithmetic operation using the `checked` and `unchecked` keywords. 
+
+
+
+
