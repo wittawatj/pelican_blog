@@ -12,22 +12,40 @@ writing equations in by using `\begin{equation}`...`\end{equation}`.
 from pelican import signals
 
 latexScript = """
-    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
-       MathJax.Hub.Config({
-           config: ["MMLorHTML.js"],
-           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
-           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
-           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
-           tex2jax: { 
-               inlineMath: [ [\'$\',\'$\'] ],
-               displayMath: [ [\'$$\',\'$$\'] ],
-               processEscapes: true },
-           "HTML-CSS": {
-               styles: { ".MathJax .mo, .MathJax .mi": {color: "#001574 ! important"}}
-           }
-       });
-    </script>
+   <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+      MathJax.Hub.Config({
+          config: ["MMLorHTML.js"],
+          jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+          TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+          extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+          tex2jax: { 
+              inlineMath: [ [\'$\',\'$\'] ],
+              displayMath: [ [\'$$\',\'$$\'] ],
+              processEscapes: true },
+          "HTML-CSS": {
+              styles: { ".MathJax .mo, .MathJax .mi": {color: "#001574 ! important"}}
+          }
+      });
+   </script>
 """
+
+#latexScript = """
+#    <script src="http://wittawat.com/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+#       MathJax.Hub.Config({
+#           config: ["MMLorHTML.js"],
+#           jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+#           TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+#           extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+#           tex2jax: { 
+#               inlineMath: [ [\'$\',\'$\'] ],
+#               displayMath: [ [\'$$\',\'$$\'] ],
+#               processEscapes: true },
+#           "HTML-CSS": {
+#               styles: { ".MathJax .mo, .MathJax .mi": {color: "#001574 ! important"}}
+#           }
+#       });
+#    </script>
+#"""
 
 def addLatex(gen, metadata):
     """
