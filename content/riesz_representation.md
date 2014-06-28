@@ -9,7 +9,7 @@ $\mathcal{F}$, every continuous linear functional $L:\mathcal{F}\rightarrow\math
 can be written as $Lf=\left\langle f,g\right\rangle _{\mathcal{F}}$
 for a unique $g\in\mathcal{F}$.
 
-Proof. Assume that the linear functional $L$ is continuous. For the
+*Proof*. Assume that the linear functional $L$ is continuous. For the
 edge case where $Lf=0$ for all $f$, this is trivial because $Lf=\left\langle f,0\right\rangle $,
 so $g=0$. If not, we know that the null space of $L$ i.e., $N=\{f\mid Lf=0\}=L^{-1}\left(\{0\}\right)$
 is closed because a continuous operator maps a closed set to a closed
