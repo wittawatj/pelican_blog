@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ SITENAME }} <small>[tgs]</small>{% endblock %}
 {% block content %}
-<ul>
+<div>
 {% for tag, articles in tags %}
-    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</li>
+    <!--<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</li>-->
+    <a href="{{ SITEURL }}/{{ tag.url }}" style="margin: 0.3em">{{ tag }} </a>
+
 {% endfor %}
-</ul>
+</div>
 {% endblock %}

@@ -42,8 +42,8 @@ ARTICLE_EXCLUDES = (('pages', 'upload', 'images', 'css', 'js', 'blog', 'projects
 STATIC_PATHS = (['images', 'css', 'upload', 'js', 'pages/files', 'pages/images', 'pages/projects', 'blog', 'projects', 'software'])
 PDF_GENERATOR = True
 #THEME=os.path.expanduser("~/git/pelican-themes/built-texts/")
-THEME = 'theme/gum'
-#THEME = 'theme/built-texts'
+#THEME = 'theme/gum'
+THEME = 'theme/built-texts'
 PLUGIN_PATH = "plugins"
 PLUGINS = ["latex"]
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'mathjax']
