@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.css" type="text/css" />
+    <meta charset="utf-8" />
+  
+    {% if FEED_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+
+    <!-- Javascript-->
+    <script src="{{ SITEURL }}/theme/js/invisible-menu-scroll.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript"> 
+      $(function() {
+        invisibleMenu();
+      });
+    </script> 
+    {% endblock head %}
+
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
+      MathJax.Hub.Config({
+          config: ["MMLorHTML.js"],
+          jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+          TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"], equationNumbers: { autoNumber: "AMS" } },
+          extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+          tex2jax: { 
+              inlineMath: [ ['$','$'] ],
+              displayMath: [ ['$$','$$'] ],
+              processEscapes: true },
+          "HTML-CSS": {
+              styles: { ".MathJax .mo, .MathJax .mi": {color: "#001574 ! important"}}
+          }
+      });
+   </script>
+
+  </head>
+
+  <body id="index" class="home">
+    <div class="box-mat">
+    {% block social_navigation %}
+    <div class="social-navigation">
+      <ol class="nav">
+          {% for name, link in SOCIAL %}
+            <li><a href="{{ link }}"><i class="icon-{{ name }}"></i>  </a></li>
+          {% endfor %}
+          {% if FEED_RSS %}
+            <li><a href="{{ SITEURL }}/{{ FEED_RSS }}"><i class="icon-rss"></i>  </a></li>
+          {% endif %}
+          {% if EMAIL%}
+            <li><a href="mailto:{{ EMAIL }}"><i class="icon-envelope"></i> </a></li>
+          {% endif %}
+        </ol>
+      </div>
+    {% endblock social_navigation %}
+        <header id="banner" class="body">
+                <div class="banner"><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></div>
+        </header><!-- /#banner -->
+        <div class="navigation">
+          <ol>
+
+              <!--
+            {% for title, link in MENUITEMS %}
+                <li><a href="{{ link }}">{{ title }}</a></li>
+            {% endfor %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+              {% for p in PAGES %}
+                <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+              {% endfor %}
+            {% else %}
+              {% for cat, null in categories %}
+                <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              {% endfor %}
+            {% endif %}
+-->
+
+       <!-- I added the following -->
+       {% for title, link in MENUITEMS %}
+                  <li><a href="{{ link }}">{{ title }}</a></li>
+              {% endfor %}
+
+          </ol>
+        </div><!-- /#menu -->
+      <div class="box-outer">
+        <div class="box">
+            {% block content %}
+            {% endblock %}
+        </div> <!-- box -->
+      </div> <!-- box-outer -->
+      <div class="bottom"></div>
+      <footer id="contentinfo" class="footer">
+          <div>
+              <a href="{{SITEURL}}">{{AUTHOR}}</a> (2013)
+          </div>
+          <div>
+              Water-iris theme is licensed under <a rel="license" href="http://opensource.org/licenses/bsd-3-clause">3 clause BSD</a>. Source code available on <a href="https://github.com/jarv/water-iris">Github</a>
+          </div>
+          <div>
+              powered by <a href="http://getpelican.com/">Pelican</a>
+              and <a href="http://python.org">Python</a>. 
+              <a href="http://github.com/jarv/water-iris">Theme</a> by <a href="http://jarv.org">John Jarvis</a> based on <a href="http://github.com/slok/iris">Iris</a>, <a href="https://github.com/getpelican/pelican-themes/tree/master/waterspill-en">Waterspill</a> and the <a href="http://flask.pocoo.org/">Flask</a> theme
+          </div>
+          <div>
+              Social icons (font awesome) by <a href="http://fortawesome.github.com/Font-Awesome/">font awesome</a>.
+              <a href="http://www.google.com/webfonts/specimen/Gabriela">Title</a> and <a href="http://www.google.com/webfonts/specimen/Inconsolata">source code</a> fonts by google fonts
+          </div>
+          <div class="social">
+              {% for name, link in SOCIAL %}
+                  <a href="{{ link }}"><i class="icon-{{ name }}"></i>  </a>
+              {% endfor %}
+              {% if EMAIL%}
+                  <a href="mailto:{{ EMAIL }}"><i class="icon-envelope"></i> </a>
+              {% endif %}
+          </div>
+      </footer><!-- /#contentinfo -->
+
+      <!--Add statistycs-->
+      {% include 'gosquared.html' %}
+    </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9868398-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
