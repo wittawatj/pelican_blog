@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os.path
 
 AUTHOR = u'Wittawat Jitkrittum'
 SITENAME = u"WJ's Homepage"
@@ -40,6 +41,7 @@ ARTICLE_EXCLUDES = (('pages', 'upload', 'images', 'css', 'js', 'blog', 'projects
 #The static paths you want to have accessible on the output path “static”. By default, Pelican will copy the “images” folder to the output folder.
 STATIC_PATHS = (['images', 'css', 'upload', 'js', 'pages/files', 'pages/images', 'pages/projects', 'blog', 'projects', 'software'])
 PDF_GENERATOR = True
+#THEME=os.path.expanduser("~/git/pelican-themes/built-texts/")
 THEME = 'theme/gum'
 #THEME = 'theme/built-texts'
 PLUGIN_PATH = "plugins"

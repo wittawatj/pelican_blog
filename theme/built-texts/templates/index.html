@@ -6,7 +6,7 @@
 {% for article in articles_page.object_list %}        
 
 {% if loop.first and not articles_page.has_previous() %}
-    <div class='row-fluid'>
+    <div class='row-fluid''>
         <div class="article-title span9">
             <a href="{{ SITEURL }}/{{ article.url }}"><h1>{{ article.title }}</h1></a>
         </div>
