@@ -42,8 +42,8 @@ ARTICLE_EXCLUDES = (('pages', 'upload', 'images', 'css', 'js', 'blog', 'projects
 STATIC_PATHS = (['images', 'css', 'upload', 'js', 'pages/files', 'pages/images', 'pages/projects', 'blog', 'projects', 'software'])
 PDF_GENERATOR = True
 #THEME=os.path.expanduser("~/git/pelican-themes/water-iris/")
-THEME = 'theme/water-iris/'
-#THEME = 'theme/built-texts'
+#THEME = 'theme/water-iris/'
+THEME = 'theme/built-texts'
 PLUGIN_PATH = "plugins"
 PLUGINS = ["latex"]
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'mathjax']
@@ -53,6 +53,6 @@ DISPLAY_PAGES_ON_MENU = False
 #DISPLAY_CATEGORIES_ON_MENU = True
 #TYPOGRIFY = True
 
-GOOGLE_ANALYTICS_ID = 'UA-9868398-1'
-GOOGLE_ANALYTICS_SITENAME = 'wittawat.com'
+#GOOGLE_ANALYTICS_ID = 'UA-9868398-1'
+#GOOGLE_ANALYTICS_SITENAME = 'wittawat.com'
 
