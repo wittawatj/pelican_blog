@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">
+      {{ article.title }}
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="{{ article.date.isoformat() }}">
+      {{ article.locale_date }}
+    </p>
+
+    {% if article.author and SHOW_ARTICLE_AUTHOR %}
+    <address class="vcard author">
+      By <a class="nodec" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+    </address>
+    {% endif  %}
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    {{ article.content }}
+  </div><!-- .content -->
+
+</section>
+
+{% endblock %}

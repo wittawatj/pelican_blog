@@ -43,7 +43,8 @@ STATIC_PATHS = (['images', 'css', 'upload', 'js', 'pages/files', 'pages/images',
 PDF_GENERATOR = True
 #THEME=os.path.expanduser("~/git/pelican-themes/water-iris/")
 #THEME = 'theme/water-iris/'
-THEME = 'theme/built-texts'
+THEME = 'theme/crowsfoot//'
+#THEME = 'theme/built-texts'
 PLUGIN_PATH = "plugins"
 PLUGINS = ["latex"]
 MD_EXTENSIONS = ['codehilite(css_class=highlight)','extra', 'mathjax']
