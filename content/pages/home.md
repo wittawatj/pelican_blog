@@ -1,4 +1,4 @@
-Title: 
+Title: Welcome
 URL:
 save_as: index.html
 slug: index

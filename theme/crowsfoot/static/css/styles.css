@@ -10,7 +10,7 @@ body {
 html { /* This stuff is for the sticky footer. */
     min-height:100%;
     position:relative;
-    font-size: 18px;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -29,9 +29,9 @@ body {
 }
 
 .siteheader {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     overflow: visible;
-    height: 200px;
+    height: 110px;
 }
 
 .siteimage {
@@ -41,8 +41,8 @@ body {
 
 .sitetitle {
     font-family: 'Merriweather';
-    font-weight: 300;
-    font-size: 4em;
+    /*font-weight: 200;*/
+    font-size: 2em;
     padding-left: 10px; /* Hack to dodge :hover issue. */
     position: relative; /* Hack to dodge :hover issue. */
     left: -10px; /* Hack to dodge :hover issue. */
@@ -51,8 +51,8 @@ body {
 .sitesubtitle {
     color: #000;
     font-size: 1em;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     /* padding-left: 30px; */
 }
 
