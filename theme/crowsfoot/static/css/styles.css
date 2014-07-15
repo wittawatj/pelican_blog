@@ -3,21 +3,23 @@
 
 /* General stuff. */
 
-body {
-    width: 800px;
-}
-
 html { /* This stuff is for the sticky footer. */
     min-height:100%;
     position:relative;
     font-size: 15px;
     -webkit-font-smoothing: antialiased;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 body {
     background-color:#fafafa;
+    /*width: 800px;*/
+    max-width: 800px;
     font-family:'Open Sans';
     margin: 20px auto 100px auto; /* For sticky footer. */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Site header. */
