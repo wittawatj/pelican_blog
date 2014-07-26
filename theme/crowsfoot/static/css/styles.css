@@ -44,7 +44,7 @@ body {
 .sitetitle {
     font-family: 'Merriweather';
     /*font-weight: 200;*/
-    font-size: 2em;
+    font-size: 1.5em;
     padding-left: 10px; /* Hack to dodge :hover issue. */
     position: relative; /* Hack to dodge :hover issue. */
     left: -10px; /* Hack to dodge :hover issue. */
@@ -61,7 +61,7 @@ body {
 /* The navbar. */
 
 .menu {
-    font-size: 1.3em;
+    font-size: 1.2em;
     /* padding-left: 30px; */
 }
 
@@ -150,7 +150,7 @@ sub {
 /* Article */
 
 .article {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 /* Lists */

@@ -29,7 +29,7 @@ SOCIAL = (('twitter', 'https://twitter.com/wittawatj'),
           ('google', 'https://plus.google.com/112508555412336958238/'),)
 
 DEFAULT_PAGINATION = False
-MENUITEMS = [('Projects', '/pages/projects.html'), ('Posts', '/archives.html'), ('Interesting', '/pages/interesting.html')]
+MENUITEMS = [('Work', '/pages/work.html'), ('Posts', '/archives.html'), ('Interesting', '/pages/interesting.html')]
 
 #('About', '/pages/about.html')
 

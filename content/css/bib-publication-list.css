@@ -1,0 +1,32 @@
+#pubDiv span.undefined { color:red; }
+#pubDiv .bibtable {width:100%; margin: 0 auto; clear: both;}
+#pubDiv .bibchart { width: 100%; height: 100px; margin-bottom: 20px;}
+#pubDiv .clear {clear:both;}
+#pubDiv .year { position: relative; height: 100%; border-bottom: 1px solid black; display: inline-block;}
+#pubDiv .yearlabel { position: absolute; bottom: -20px; text-align: center; width: 100%; font-size: smaller;}
+#pubDiv .pub { border: 1px solid white; background-color: #eee; }
+#pubDiv .inproceedings { background-color: #ccf; }
+#pubDiv .article { background-color: #beb; }
+#pubDiv .inbook { background-color: #eaa; }
+#pubDiv .phdthesis { background-color: #999; }
+#pubDiv .unpublished { background-color: #eae; }
+#pubDiv .mastersthesis { background-color: #eea; }
+#pubDiv .techreport { background-color: #b77; }
+#pubDiv .legend .pub { width: 10px; height: 10px; display: inline-block; margin: 0 5px 0 15px;}
+#pubDiv .legend { margin-bottom: 20px; text-align: center; width: 100%;}
+#pubDiv table.display thead th { padding: 3px 18px 3px 10px; border-bottom: 1px solid black; border-top: 1px solid black; font-weight: bold; cursor: pointer; cursor: hand; }
+#pubDiv table.display tfoot th { padding: 3px 10px; border-top: 1px solid black; font-weight: bold; }
+#pubDiv table.display td { padding: 3px 10px; }
+#pubDiv table.display td.center { text-align: center; }
+#pubDiv .sorting_asc { background: url('lib/images/sort_asc.png') no-repeat center right; }
+#pubDiv .sorting_desc { background: url('lib/images/sort_desc.png') no-repeat center right; }
+#pubDiv .sorting { background: url('lib/images/sort_both.png') no-repeat center right; }
+#pubDiv .sorting_asc_disabled { background: url('lib/images/sort_asc_disabled.png') no-repeat center right; }
+#pubDiv .sorting_desc_disabled { background: url('lib/images/sort_desc_disabled.png') no-repeat center right; }
+#pubDiv tr.odd { background-color: #eee; }
+#pubDiv tr.even { background-color: white; }
+#pubDiv div.hidden { display: none;}
+#pubDiv div.bibinfo { width: 80%; position: fixed; top: 100px; left: 10%; background-color: #bbb; border: 3px solid #fff; padding: 10px; -moz-border-radius:10px; -webkit-border-radius:10px; -o-border-radius:10px; border-radius:10px; z-index: 50;}
+#pubDiv #shutter { background-color: #555; opacity: 0.7; width:100%; height: 100%; position: fixed; top: 0; left:0; z-index: 20;}
+#pubDiv a.bibclose { background-color: #BBBBBB; border: 3px solid #FFFFFF; color: black; float: left; font-size: 20px; height: 20px; left: -25px; line-height: 20px; padding: 3px; position: relative; text-align: center; text-decoration: none; top: -25px; width: 20px; -moz-border-radius:15px; -webkit-border-radius:15px; -o-border-radius:15px; border-radius:15px; }
+#pubDiv div.bibinfo pre { clear:both; }
