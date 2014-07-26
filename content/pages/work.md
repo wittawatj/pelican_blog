@@ -16,7 +16,25 @@ Implementation is available in Matlab. (03/2013)
 <div id=pubDiv>
 <table id="pubTable" class="display"></table>
 </div>
-<pre id="bibtex" style="display:none;">@ARTICLE{Jitkrittum2013,
+<pre id="bibtex" style="display:none;">
+@article{DBLP:journals/neco/YamadaJSXS14,
+  author    = {Makoto Yamada and
+               Wittawat Jitkrittum and
+               Leonid Sigal and
+               Eric P. Xing and
+               Masashi Sugiyama},
+  title     = {High-Dimensional Feature Selection by Feature-Wise Kernelized
+               Lasso},
+  journal   = {Neural Computation},
+  volume    = {26},
+  number    = {1},
+  year      = {2014},
+  pages     = {185-207},
+  ee        = {http://dx.doi.org/10.1162/NECO_a_00537},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+url={http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00537#.U9O7Idtsylg}
+}
+@ARTICLE{Jitkrittum2013,
   author = {Wittawat Jitkrittum and Hirotaka Hachiya and Masashi Sugiyama},
   title = {Feature Selection via $\ell_1$-Penalized Squared-Loss Mutual Information},
   journal = {IEICE Transactions},
