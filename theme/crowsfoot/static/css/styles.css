@@ -42,7 +42,7 @@ body {
 }
 
 .sitetitle {
-    font-family: 'Merriweather';
+    /*font-family: 'Merriweather';*/
     /*font-weight: 200;*/
     font-size: 1.5em;
     padding-left: 10px; /* Hack to dodge :hover issue. */
