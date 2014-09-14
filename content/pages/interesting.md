@@ -19,3 +19,7 @@ Slug: interesting
 
 ## Video lectures
 * [Abstract Algebra/Group Theory](https://www.youtube.com/playlist?list=PLA7B08F1D8252DE29). Free lecture videos by Benedict Gross, PhD, George Vasmer Leverett Professor of Mathematics, Harvard University. 
+* [MSRI's video repository](http://www.msri.org/web/msri/online-videos). A large collection of math lectures by Mathematical Sciences Research Institute. 
+
+## Resources
+* [Virtual laboratories in probability and statistics](http://www.math.uah.edu/stat/index.html).
