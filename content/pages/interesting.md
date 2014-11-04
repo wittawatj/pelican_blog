@@ -16,6 +16,7 @@ Slug: interesting
 * [Reinforcement Learning: An Introduction](http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html) by Richard S. Sutton and Andrew G. Barto. Second edition available in [PDF](https://www.dropbox.com/s/f4tnuhipchpkgoj/book2012.pdf).
 * [Algorithms for Reinforcement Learning](http://www.ualberta.ca/~szepesva/RLBook.html) by Csaba Szepesvári.
 * [Introduction to sparse stochastic processes](http://www.sparseprocesses.org/) by Michael Unser and Pouya Tafti. 
+* [Open-source math text books](http://aimath.org/textbooks/approved-textbooks/) approved by the AIM editorial board.
 
 ## Video lectures
 * [Abstract Algebra/Group Theory](https://www.youtube.com/playlist?list=PLA7B08F1D8252DE29). Free lecture videos by Benedict Gross, PhD, George Vasmer Leverett Professor of Mathematics, Harvard University. 
