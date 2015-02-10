@@ -13,7 +13,8 @@ html { /* This stuff is for the sticky footer. */
 }
 
 body {
-    background-color:#fafafa;
+    /*background-color:#fafafa;*/
+    background-color:white;
     /*width: 800px;*/
     max-width: 800px;
     font-family:'Open Sans';
