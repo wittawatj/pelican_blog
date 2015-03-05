@@ -1,0 +1,773 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{etex}
+\usepackage{geometry}
+    \usepackage[ plainpages = true, pdfpagelabels, 
+                 pdfpagelayout = useoutlines,
+                 bookmarks,
+                 bookmarksopen = true,
+                 bookmarksnumbered = true,
+                 breaklinks = true,
+                 linktocpage,
+                 pagebackref,
+                 colorlinks = true,
+                 linkcolor = blue,
+                 urlcolor  = blue,
+                 citecolor = red,
+                 anchorcolor = green,
+                 hyperindex = true,
+                 hyperfigures
+                 ]{hyperref} 
+%\usepackage{index}
+\usepackage{longtable}
+%\usepackage{mdwlist}
+\usepackage{natbib}
+%\usepackage{microtype}
+\usepackage{soul}
+
+\usepackage{url}
+\usepackage[all]{xy}
+
+\usepackage{epstopdf}
+\usepackage{auto-pst-pdf}
+\usepackage{tikz}
+
+
+\date{}
+
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\algoref}[1]{Algorithm~\ref{#1}}
+\newcommand{\algoline}[1]{\texttt{\ref{#1}:}}
+
+\newcommand{\C}[1]{}
+\newcommand{\cc}[1]{\yhl{#1}}
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\tr}[1]{\textcolor{orange}{#1}}
+
+
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+
+\newcommand{\x}{\bs{x}}
+\newcommand{\X}{\mathbf{X}}
+
+\newcommand{\y}{\bs{y}}
+\newcommand{\Y}{\mathbf{Y}}
+
+\newcommand{\z}{\bs{z}}
+\newcommand{\Z}{\mathbf{Z}}
+
+\newcommand{\al}{\bs{\alpha}}
+\newcommand{\alh}{\bs{\widehat{\alpha}}}
+\newcommand{\h}{\bs{h}}
+\newcommand{\hh}{\bs{\widehat{h}}}
+\renewcommand{\H}{\bs{H}}
+\newcommand{\Hh}{\bs{\widehat{H}}}
+\newcommand{\R}{\bs{R}}
+\newcommand{\W}{\bs{W}}
+\newcommand{\w}{\bs{w}}
+\newcommand{\Wh}{\bs{\widehat{W}}}
+\newcommand{\wh}{\bs{\widehat{w}}}
+\newcommand{\Wti}{\bs{\widetilde{W}}}
+
+\newcommand{\bh}{\bs{\widehat{\beta}}}
+\newcommand{\Phib}{\bs{\varphi}}
+\newcommand{\Phiy}{\bs{\phi}^y}
+\newcommand{\Phiz}{\bs{\phi}^z}
+\newcommand{\met}{$\ell_{1}$-LSMI}
+
+\newcommand{\diag}{\mathop{\mathrm{diag}}}
+\newcommand{\trace}{\mathop{\mathrm{tr}}}
+\newcommand{\median}{\mathop{\mathrm{median}}}
+
+\let\oldenumerate=\enumerate
+\def\enumerate{
+\oldenumerate
+\setlength{\itemsep}{0pt}
+}
+\let\olditemize=\itemize
+\def\itemize{
+\olditemize
+\setlength{\itemsep}{0pt}
+}
+
+\usetikzlibrary{shapes,decorations}
+\usetikzlibrary{calc}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+True Online TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+This post contains a summary of the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+href{http://jmlr.org/proceedings/papers/v32/seijen14.html}{paper}
+\end_layout
+
+\end_inset
+
+ titled 
+\begin_inset Quotes eld
+\end_inset
+
+True Online TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ appearing in ICML 2014.
+ 
+\end_layout
+
+\begin_layout Subsection
+Classical TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+ is a core model-free algorithm in reinforcement learning for estimating
+ a value function.
+ Let 
+\begin_inset Formula $\hat{v}_{t}(S_{t})$
+\end_inset
+
+ be the estimated value at time 
+\begin_inset Formula $t$
+\end_inset
+
+ of state 
+\begin_inset Formula $S_{t}$
+\end_inset
+
+.
+ Often a stochastic gradient descent-like update of the following form is
+ used
+\begin_inset Formula 
+\[
+\theta_{t+1}=\theta_{t}+\alpha\left(U_{t}-\hat{v}_{t}(S_{t})\right)\nabla_{\theta_{t}}\hat{v}_{t}(S_{t})
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is the parameter of 
+\begin_inset Formula $\hat{v}$
+\end_inset
+
+ to estimate, 
+\begin_inset Formula $U_{t}$
+\end_inset
+
+ denotes an update target, and 
+\begin_inset Formula $\nabla_{\theta_{t}}\hat{v}_{t}(S_{t})$
+\end_inset
+
+ is the derivative of 
+\begin_inset Formula $\hat{v}$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $\theta_{t}$
+\end_inset
+
+.
+ By definition, the value of a state 
+\begin_inset Formula $s$
+\end_inset
+
+ is the total expected sum of discounted future rewards starting from state
+ 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ In math, 
+\begin_inset Formula 
+\[
+v(s)=\mathbb{E}\left[R_{t+1}+\gamma R_{t+2}+\gamma^{2}R_{t+3}+\cdots\mid S_{t}=s\right].
+\]
+
+\end_inset
+
+A sensible and unbiased estimate for this expectation is given by an observed
+ trajectory of rewards 
+\begin_inset Formula $U_{t}=R_{t+1}+\gamma R_{t+2}+\gamma^{2}R_{t+3}+\cdots$
+\end_inset
+
+ starting from state 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ This choice of update target is called Monte Carlo update.
+ Note that it cannot be used online since the target depends on the future.
+ So one has to wait until the end of an episode first.
+ Then, come back and update each time step.
+ 
+\end_layout
+
+\begin_layout Standard
+A popular update target 
+\begin_inset Formula $U_{t}$
+\end_inset
+
+ meant to be an online version of Monte Carlo update is given by TD
+\begin_inset Formula $(0)$
+\end_inset
+
+ which comes from the fact that
+\begin_inset Formula 
+\begin{eqnarray*}
+v(s) & = & \mathbb{E}\left[R_{t+1}+\gamma R_{t+2}+\gamma^{2}R_{t+3}+\cdots\mid S_{t}=s\right]\\
+ & = & \mathbb{E}\left[R_{t+1}+\gamma v(S_{t+1})\mid S_{t}=s\right].
+\end{eqnarray*}
+
+\end_inset
+
+TD(0) approximates the quantity with one realization of the term in the
+ expectation.
+ That is,
+\begin_inset Formula 
+\[
+U_{t}=R_{t+1}+\gamma\hat{v}_{t}(S_{t+1}).
+\]
+
+\end_inset
+
+This update can be used online as it depends only the reward of one time
+ step ahead of current time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Now of course one can follow the same trick by doing
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbb{E}\left[R_{t+1}+\gamma R_{t+2}+\gamma^{2}R_{t+3}+\cdots\mid S_{t}=s\right] & = & \mathbb{E}\left[R_{t+1}+\gamma R_{t+2}+\gamma^{2}v(S_{t+2})\mid S_{t}=s\right]
+\end{eqnarray*}
+
+\end_inset
+
+and use 
+\begin_inset Formula $U_{t}=R_{t+1}+\gamma R_{t+2}+\gamma^{2}v(S_{t+2})$
+\end_inset
+
+.
+ This target is called a 2-step return.
+ The previous TD(0) target is called 1-step return.
+ From this, one can obviously define an 
+\begin_inset Formula $n$
+\end_inset
+
+-step return from time 
+\begin_inset Formula $t$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\[
+G_{\theta}^{(n)}(t):=\left(\sum_{i=1}^{n}\gamma^{i-1}R_{t+i}\right)+\gamma^{n}\theta^{\top}\phi_{t+n}
+\]
+
+\end_inset
+
+where we will assume that 
+\begin_inset Formula $\hat{v}(S_{t})=\theta^{\top}\phi(S_{t})$
+\end_inset
+
+ for basis function 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{t}:=\phi(S_{t})$
+\end_inset
+
+.
+ This leads to the question: 
+\begin_inset Quotes eld
+\end_inset
+
+Which 
+\begin_inset Formula $n$
+\end_inset
+
+ do we use ?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ One answer is that we use all of them by geometrically weighting all 
+\begin_inset Formula $n$
+\end_inset
+
+-returns.
+ This combined returns are referred to as 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-return
+\begin_inset Formula 
+\[
+L_{\theta}^{\lambda}(t):=\left(1-\lambda\right)\sum_{n=1}^{\infty}\lambda^{n-1}G_{\theta}^{(n)}(t)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\lambda\in[0,1]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+, 
+\begin_inset Formula $L_{\theta}^{\lambda}(t)=R_{t+1}+\gamma\hat{v}_{t}(S_{t+1})$
+\end_inset
+
+ giving back TD(0) update target.
+ If 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+, the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-return is equivalent to Monto Carlo update target.
+ Hence, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-return provides a smooth blend between TD(0) and Monte Carlo update parametrize
+d by 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Forward and Backward TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Updating 
+\begin_inset Formula $\theta$
+\end_inset
+
+ with 
+\begin_inset Formula 
+\[
+\theta_{t+1}=\theta_{t}+\alpha\left(L_{\theta}^{\lambda}(t)-\hat{v}(S_{t})\right)\phi_{t}
+\]
+
+\end_inset
+
+is referred to as forward-view TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+ which is not online since, like Monte Carlo update, 
+\begin_inset Formula $L_{\theta}^{\lambda}$
+\end_inset
+
+ depends on the rewards in the future.
+ Interestingly, an equivalent way to update 
+\begin_inset Formula $\theta$
+\end_inset
+
+ in an online way using 
+\begin_inset Formula $L_{\theta}^{\lambda}$
+\end_inset
+
+ exists.
+ This is called backward-view TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{(TD error) }\delta_{t} & = & R_{t+1}+\gamma\overbrace{\theta_{t}^{\top}\phi_{t+1}}^{\hat{v}_{t}(S_{t+1})}-\overbrace{\theta_{t}^{\top}\phi_{t}}^{\hat{v}_{t}(S_{t})}\\
+\boldsymbol{e}_{t} & = & \gamma\lambda\boldsymbol{e}_{t-1}+\alpha\phi_{t}\\
+\theta_{t+1} & = & \theta_{t}+\delta_{t}\boldsymbol{e}_{t}
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\boldsymbol{e}_{t}$
+\end_inset
+
+ is called eligibility traces containing footprints of recently visited
+ states and 
+\begin_inset Formula $\boldsymbol{e}_{0}=\boldsymbol{0}$
+\end_inset
+
+.
+ Instead of updating 
+\begin_inset Formula $\theta_{t+1}$
+\end_inset
+
+ toward 
+\begin_inset Formula $\phi_{t}$
+\end_inset
+
+ weighted by some quantity, here we update 
+\begin_inset Formula $\theta_{t+1}$
+\end_inset
+
+ towards 
+\begin_inset Formula $\boldsymbol{e}_{t}$
+\end_inset
+
+ which accumulates many visited states in the past, weighted down exponentially
+ by 
+\begin_inset Formula $\gamma\lambda$
+\end_inset
+
+.
+ Essentially if the agent is highly rewarded in a state 
+\begin_inset Formula $s'$
+\end_inset
+
+, not only the preceding state 
+\begin_inset Formula $s$
+\end_inset
+
+ leading to 
+\begin_inset Formula $s'$
+\end_inset
+
+ that is credited, but all previous states leading to 
+\begin_inset Formula $s$
+\end_inset
+
+ are also given credits (although exponentially less because of 
+\begin_inset Formula $\gamma\lambda$
+\end_inset
+
+ factor).
+ The following is a well-known result.
+\end_layout
+
+\begin_layout Theorem
+
+\series bold
+Theorem.
+ 
+\series default
+The sum of 
+\series bold
+offline
+\series default
+ updates is identical for forward-view and backward-view TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{t=1}^{T}\delta_{t}\boldsymbol{e}_{t}=\sum_{t=1}^{T}\alpha\left(L_{\theta}^{\lambda}(t)-\hat{v}(S_{t})\right)\phi_{t}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $T$
+\end_inset
+
+ is the last time step in the episode.
+\end_layout
+
+\begin_layout Standard
+Although interesting, the two views are not equivalent for online updates
+ (only approximatedly equal).
+\end_layout
+
+\begin_layout Subsection
+Idea of the paper
+\end_layout
+
+\begin_layout Standard
+The paper proposes a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-return called truncated 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-return which is basically like the classical 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-return except that it is truncated at the current time step.
+ This gives rise to a new forward-view and backward-view TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+ which they call true online TD
+\begin_inset Formula $(\lambda)$
+\end_inset
+
+.
+ It is called so because of the following theorem given in the paper.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Theorem.
+ 
+\series default
+
+\begin_inset Formula $\theta_{t}$
+\end_inset
+
+ from backward update is exactly equal to 
+\begin_inset Formula $\theta_{t,t}$
+\end_inset
+
+ from forward update for all 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The new backward-view update equations are 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{eqnarray*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+delta_{t}&=&R_{t+1}+
+\backslash
+gamma
+\backslash
+theta_{t}^{
+\backslash
+top}
+\backslash
+phi_{t+1}-
+\backslash
+theta_{t-1}^{
+\backslash
+top}
+\backslash
+phi_{t}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+boldsymbol{e}_{t}&=&
+\backslash
+gamma
+\backslash
+lambda
+\backslash
+boldsymbol{e}_{t-1}+
+\backslash
+alpha_{t}
+\backslash
+phi_{t} -
+\backslash
+alpha_{t}
+\backslash
+gamma
+\backslash
+lambda
+\backslash
+left(
+\backslash
+boldsymbol{e}_{t-1}^{
+\backslash
+top}
+\backslash
+phi_{t}
+\backslash
+right)
+\backslash
+phi_{t}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+theta_{t+1}&=&
+\backslash
+theta_{t}+
+\backslash
+delta_{t}
+\backslash
+boldsymbol{e}_{t} +
+\backslash
+alpha_{t}
+\backslash
+left(
+\backslash
+theta_{t-1}^{
+\backslash
+top}
+\backslash
+phi_{t}-
+\backslash
+theta_{t}^{
+\backslash
+top}
+\backslash
+phi_{t}
+\backslash
+right)
+\backslash
+phi_{t}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{eqnarray*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

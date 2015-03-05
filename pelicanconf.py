@@ -26,7 +26,8 @@ DISQUS_SITENAME = "wjresearch"
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/wittawatj'),
-          ('google', 'https://plus.google.com/112508555412336958238/'),)
+          ('google', 'https://plus.google.com/112508555412336958238/'),
+          ('github', 'https://github.com/wittawatj'))
 
 DEFAULT_PAGINATION = False
 MENUITEMS = [('Work', '/pages/work.html'), ('Posts', '/archives.html'), ('Interesting', '/pages/interesting.html')]
@@ -43,7 +44,8 @@ STATIC_PATHS = (['images', 'css', 'upload', 'js', 'pages/files', 'pages/images',
 PDF_GENERATOR = True
 #THEME=os.path.expanduser("~/git/pelican-themes/water-iris/")
 #THEME = 'theme/water-iris/'
-THEME = 'theme/crowsfoot//'
+#THEME = 'theme/crowsfoot//'
+THEME = 'theme/pelican-bootstrap3'
 #THEME = 'theme/built-texts'
 PLUGIN_PATH = "plugins"
 PLUGINS = ["latex"]
@@ -54,6 +56,16 @@ DISPLAY_PAGES_ON_MENU = False
 #DISPLAY_CATEGORIES_ON_MENU = True
 #TYPOGRIFY = True
 
+GOOGLE_ANALYTICS = 'UA-9868398-1'
 #GOOGLE_ANALYTICS_ID = 'UA-9868398-1'
 #GOOGLE_ANALYTICS_SITENAME = 'wittawat.com'
 
+# For pelican-bootstrap3 theme 
+#It uses the tag_cloud variable for displaying tags in the sidebar. You can
+#control the amount of tags shown with:
+TAG_CLOUD_MAX_ITEMS = 20 
+DISPLAY_TAGS_INLINE = True
+DISPLAY_TAGS_ON_SIDEBAR = False
+#https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
+SHOW_ARTICLE_CATEGORY = False
+CC_LICENSE = "CC-BY"
