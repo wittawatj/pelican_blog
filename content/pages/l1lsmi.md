@@ -15,7 +15,7 @@ $$
 $$
 
 
-where $\widehat{I}_s$ is [Least-Squares Mutual Information (LSMI)](http://sugiyama-www.cs.titech.ac.jp/~sugi/software/LSMI/)
+where $\widehat{I}_s$ is [Least-Squares Mutual Information (LSMI)](http://www.ms.k.u-tokyo.ac.jp/software.html#LSMI)
 , an estimator of SMI. $z>0$ is the radius of the $\ell_1$-ball which controls the sparseness of $\boldsymbol{w}$.
 Features are selected according to the non-zero coefficients of
 the learned $\widehat{\boldsymbol{w}}$. 

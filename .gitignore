@@ -1,1 +1,6 @@
 .dropbox.attr
+/output/
+*.swp
+*.pyc
+/pelican.pid
+/srv.pid

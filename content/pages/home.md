@@ -31,7 +31,8 @@ document.write(".ac.uk");
 Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. Blog post <a href="archives.html">archives</a>.
 </p>
 
-<p>
-<a class="twitter-timeline" href="https://twitter.com/wittawatj" data-widget-id="422661360594329601">Tweets by @wittawatj</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</p>
+<!--<p>-->
+<!--<a class="twitter-timeline" href="https://twitter.com/wittawatj" data-widget-id="422661360594329601">Tweets by @wittawatj</a>-->
+<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+<!--</p>-->
+
