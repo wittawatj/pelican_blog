@@ -19,7 +19,7 @@ TRANSLATION_FEED_ATOM = None
 
 GITHUB_URL = 'https://github.com/wittawatj'
 TWITTER_URL = 'https://twitter.com/wittawatj'
-GOOGLEPLUS_URL = 'https://plus.google.com/112508555412336958238/'
+#GOOGLEPLUS_URL = 'https://plus.google.com/112508555412336958238/'
 DISQUS_SITENAME = "wjresearch"
 
 # Blogroll
@@ -27,7 +27,7 @@ DISQUS_SITENAME = "wjresearch"
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/wittawatj'),
-          ('google', 'https://plus.google.com/112508555412336958238/'),
+          #('google', 'https://plus.google.com/112508555412336958238/'),
           ('github', 'https://github.com/wittawatj'))
 
 DEFAULT_PAGINATION = False

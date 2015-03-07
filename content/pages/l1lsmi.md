@@ -23,7 +23,9 @@ the learned $\widehat{\boldsymbol{w}}$.
 
 ## Download
 
-Matlab implementation of $\ell_1$-LSMI: <a href="files/l1lsmi.zip">l1lsmi.zip</a>
+Matlab implementation of $\ell_1$-LSMI: <a href="files/l1lsmi.zip">l1lsmi.zip</a>. 
+A full source tree can also be obtained from [this github page](https://github.com/wittawatj/l1lsmi).
+See the Github page for a usage demo. Alternatively, you may
 
 * Run startup.m to include all files into the search path.</li>
 * See and run demo_pglsmi.m.</li>
