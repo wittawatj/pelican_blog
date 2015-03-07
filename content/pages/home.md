@@ -28,7 +28,9 @@ document.write(".ac.uk");
 </p>
 
 <p>
-Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. Blog post <a href="archives.html">archives</a>.
+My works are listed on <a href="pages/work.html">this page</a>.
+I occasionally update <a href="archives.html">my blog</a> summarizing what I learn.
+Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. 
 </p>
 
 <!--<p>-->
