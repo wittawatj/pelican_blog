@@ -20,6 +20,9 @@ Implementation is available in Matlab. (03/2013)
 
 ## Publications
 
+<!--should check http://nipg.inf.elte.hu/publications-embedded/2.html-->
+<!--for a table of publications-->
+
 <!--CSS style for publications -->
 <style>
 #publications dl {
@@ -34,6 +37,21 @@ Implementation is available in Matlab. (03/2013)
 <div id="publications">
 
 <dl>
+
+<dt>
+<a name="jitkrittum_kernel-based_2015">&nbsp;</a>
+</dt>
+<dd>
+W.&nbsp;Jitkrittum, A.&nbsp;Gretton, N.&nbsp;Heess, S.&nbsp;M.&nbsp;A. Eslami, B.&nbsp;Lakshminarayanan,
+  D.&nbsp;Sejdinovic, and Z.&nbsp;Szabó.
+ Kernel-Based Just-In-Time Learning for Passing
+  Expectation Propagation Messages.
+ <em>arXiv:1503.02551 [cs, stat]</em>, 2015b.
+ URL <a href="http://arxiv.org/abs/1503.02551">http://arxiv.org/abs/1503.02551</a>.
+[&nbsp;<a href="wjpubs_bib.html#jitkrittum_kernel-based_2015">bib</a>&nbsp;| 
+<a href="http://arxiv.org/abs/1503.02551">http</a>&nbsp;]
+
+</dd>
 
 <dt>
 <a name="part_k2abc_2015_arxiv">&nbsp;</a>
