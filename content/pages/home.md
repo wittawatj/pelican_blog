@@ -3,6 +3,18 @@ URL:
 save_as: index.html
 slug: index
 
+<style>
+div.news {
+    min-width: 200px;
+    width: 90%;
+    max-height: 500px;
+    /* height: 300px;*/
+    overflow: auto;
+
+    margin-left: 10px;
+    border-left: 1px solid black;
+}
+</style>
 <p>
 I am a second-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
 I received M.Eng. from <a href="http://www.titech.ac.jp/english/">Tokyo Institute of Technology</a> 
@@ -34,6 +46,20 @@ I occasionally update <a href="archives.html">my blog</a> summarizing what I lea
 Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. 
 </p>
 
+## News
+<div class="news">
+
+* **9 Mar 2015**. [Kernel-Based Just-In-Time Learning for Passing Expectation
+Propagation Messages](pages/kernel_ep.html): a fast, online algorithm for
+nonparametric learning of EP message updates. Source code available
+[here](https://github.com/wittawatj/kernel-ep). 
+
+* **9 Feb 2015**. [K2-ABC: Approximate Bayesian Computation with
+Infinite Dimensional Summary Statistics via Kernel
+Embeddings](http://arxiv.org/abs/1502.02558): summary statistic free
+approximate Bayesian computation with kernel embeddings. 
+
+</div>
 <!--<p>-->
 <!--<a class="twitter-timeline" href="https://twitter.com/wittawatj" data-widget-id="422661360594329601">Tweets by @wittawatj</a>-->
 <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
