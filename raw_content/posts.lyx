@@ -1,0 +1,414 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{etex}
+\usepackage{geometry}
+
+%\usepackage{index}
+%\usepackage{mdwlist}
+\usepackage{natbib}
+%\usepackage{microtype}
+\usepackage{soul}
+
+\usepackage{url}
+\usepackage[all]{xy}
+
+\usepackage{epstopdf}
+\usepackage{auto-pst-pdf}
+\usepackage{tikz}
+
+\newcommand{\diag}{\mathop{\mathrm{diag}}}
+\newcommand{\trace}{\mathop{\mathrm{tr}}}
+\newcommand{\median}{\mathop{\mathrm{median}}}
+
+\let\oldenumerate=\enumerate
+\def\enumerate{
+\oldenumerate
+\setlength{\itemsep}{0pt}
+}
+\let\olditemize=\itemize
+\def\itemize{
+\olditemize
+\setlength{\itemsep}{0pt}
+}
+
+\usetikzlibrary{shapes,decorations}
+\usetikzlibrary{calc}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Notes
+\end_layout
+
+\begin_layout Author
+Wittawat Jitkrittum
+\end_layout
+
+\begin_layout Section
+Automatic Alignment of Local Representations
+\end_layout
+
+\begin_layout Standard
+This post summarizes 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Teh03automaticalignment"
+
+\end_inset
+
+.
+ The paper proposes a generic method to combine coordinates obtained from
+ many dimensionality reduction algorithms into one global coordinate, essentiall
+y 
+\begin_inset Quotes eld
+\end_inset
+
+aligning
+\begin_inset Quotes erd
+\end_inset
+
+ local coordinates into a global one.
+ The motivation of such a proposal starts from the inability of linear methods
+ (e.g., PCA) to capture the structure of curved manifolds.
+ A common way to deal with a curved manifold is to consider a mixture of
+ local dimensionality reducers.
+ The idea is analogous to approximating a curve with a piecewise linear
+ function.
+ The problem with this approach is that there is no globally coherent coordinate
+ because each local region has its own.
+ 
+\end_layout
+
+\begin_layout Subsection
+Proposal
+\end_layout
+
+\begin_layout Standard
+Assume that we are given a set of points 
+\begin_inset Formula $\mathcal{X}=\left[x_{1},\ldots,x_{N}\right]^{\top}$
+\end_inset
+
+ from 
+\begin_inset Formula $D$
+\end_inset
+
+-dimensional space sampled from a 
+\begin_inset Formula $d\ll D$
+\end_inset
+
+ dimensional manifold.
+ Let 
+\begin_inset Formula $\mathcal{Y}=\left[y_{1},\ldots,y_{N}\right]^{\top}$
+\end_inset
+
+ be the reduced images of 
+\begin_inset Formula $\mathcal{X}$
+\end_inset
+
+ in 
+\begin_inset Formula $d$
+\end_inset
+
+ dimensional embedding space.
+ Suppose that we have already trained 
+\begin_inset Formula $K$
+\end_inset
+
+ local dimensionality reducers, each producing a representation 
+\begin_inset Formula $z_{nk}\in\mathbb{R}^{d_{k}}$
+\end_inset
+
+ of point 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+.
+ Associated with each output 
+\begin_inset Formula $z_{nk}$
+\end_inset
+
+ is a responsibity 
+\begin_inset Formula $r_{nk}\geq0$
+\end_inset
+
+ describing the reliability of the representation of 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ from the 
+\begin_inset Formula $k^{th}$
+\end_inset
+
+ reducer.
+ The algorithm aligns 
+\begin_inset Formula $\{z_{nk}\}_{n,k}$
+\end_inset
+
+ and 
+\begin_inset Formula $\{r_{nk}\}_{n,k}$
+\end_inset
+
+ to produce 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that the global coordinate is a linear function of 
+\begin_inset Formula $z_{nk}$
+\end_inset
+
+.
+ The paper proposes to obtain 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+ from
+\begin_inset Formula 
+\begin{align*}
+y_{n} & =\sum_{k}r_{nk}(L_{k}z_{nk}+l_{k}^{0})=\sum_{k}\sum_{i=0}^{d_{k}}r_{nk}z_{nk}^{i}l_{k}^{i}=\sum_{j}u_{nj}l_{j},
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $L_{k}=\left(l_{k}^{0}|\cdots|l_{k}^{d_{k}}\right)$
+\end_inset
+
+ is a linear projection associated with the 
+\begin_inset Formula $k^{th}$
+\end_inset
+
+ reducer, and 
+\begin_inset Formula $l_{k}^{0}$
+\end_inset
+
+ is an offset.
+ If we let 
+\begin_inset Formula $u_{nj}=r_{nk}z_{nk}^{i}$
+\end_inset
+
+, 
+\begin_inset Formula $z_{nk}^{0}:=1$
+\end_inset
+
+ and vectorizing the indeces 
+\begin_inset Formula $(i,k)$
+\end_inset
+
+ into 
+\begin_inset Formula $j$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\[
+\mathcal{Y}=UL,
+\]
+
+\end_inset
+
+which is a linear system with fixed 
+\begin_inset Formula $U$
+\end_inset
+
+ and unknown 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ To determine 
+\begin_inset Formula $L$
+\end_inset
+
+, the authors proposed to use a cost function 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+ based on the locally linear embedding (
+\begin_inset CommandInset href
+LatexCommand href
+name "LLE"
+target "https://www.cs.nyu.edu/~roweis/lle/"
+
+\end_inset
+
+) algorithm:
+\begin_inset Formula 
+\[
+\mathcal{E}(\mathcal{Y},W)=\sum_{n}\|x_{n}-\sum_{m\in\mathcal{N}_{n}}w_{nm}x_{m}\|^{2}=\mathrm{tr}(\mathcal{Y}^{\top}(I-W^{\top})(I-W)\mathcal{Y}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{N}_{n}$
+\end_inset
+
+ is the set of nearest neighbours of 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{m\in\mathcal{N}_{n}}w_{nm}=1$
+\end_inset
+
+.
+ The local linear reconstruction weights 
+\begin_inset Formula $W$
+\end_inset
+
+ are constructed by solving 
+\begin_inset Formula $\min_{W}\mathcal{E}(\mathcal{X},W)$
+\end_inset
+
+ subject to the normalization constraint.
+ With 
+\begin_inset Formula $W$
+\end_inset
+
+ determined, 
+\begin_inset Formula $\mathcal{E}(\mathcal{Y},W)$
+\end_inset
+
+ can be solved by minimizing
+\begin_inset Formula 
+\[
+\mathcal{E}(\mathcal{Y},W)=\mathrm{tr}\left[L^{\top}U^{\top}(I-W^{\top})(I-W)UL\right],
+\]
+
+\end_inset
+
+subject to two constraints, 
+\begin_inset Formula $\frac{1}{N}\boldsymbol{1}^{\top}\mathcal{Y}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{1}{N}\mathcal{Y}^{\top}\mathcal{Y}=I_{d}$
+\end_inset
+
+ to break degeneracies.
+ Solving for 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+ now amounts to solving for 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ The objective together with the two constraints form a generalized eigenvalue
+ problem whose solution is given by the 
+\begin_inset Formula $2^{nd}$
+\end_inset
+
+ to 
+\begin_inset Formula $(d+1)^{st}$
+\end_inset
+
+ smallest eigenvectors.
+ The alignment problem has no local optima.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "posts"
+options "abbrvnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
