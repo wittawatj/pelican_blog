@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    color: #484848;
 }
 
 #sidebar .list-group, #sidebar .list-group-item {
@@ -75,12 +76,13 @@ body {
 }
 
 a, a:hover {
-    color: inherit;
+    /*color: inherit;*/
+    color: black;
 }
 
 .entry-content a {
     text-decoration: none;
-    border-bottom: 1px dotted;
+    border-bottom: 1px dotted ;
 }
 
 .entry-content a:hover {
