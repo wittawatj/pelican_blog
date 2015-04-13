@@ -34,6 +34,7 @@ DEFAULT_PAGINATION = False
 MENUITEMS = [
         ('Work', '/pages/work.html'),
         #('Posts', '/archives.html'), 
+        ('Talks', '/pages/talks.html'), 
         ('Interesting', '/pages/interesting.html')
         ]
 
