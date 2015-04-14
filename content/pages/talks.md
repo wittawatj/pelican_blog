@@ -16,7 +16,7 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
-* [Bethe-Kikuchi Approximation](files/slides/waijor_bethe_kikuchi_mljc.pdf). 
+* [Sum-Product, Bethe Approximation](files/slides/waijor_bethe_kikuchi_mljc.pdf). 
     16 Feb 2015.
 
 

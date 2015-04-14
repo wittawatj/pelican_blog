@@ -70,8 +70,8 @@ Implementation is available in Matlab. (03/2013)
 <div class="publications"> 
 
 <div class="paper"> 
-<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, <a href="http://homepages.inf.ed.ac.uk/s0677090/">Nicolas Heess</a>, <a href="http://arkitus.com/">S. M. Ali Eslami</a>, <a href="http://www.gatsby.ucl.ac.uk/~balaji/">Balaji Lakshminarayanan</a>, <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a>, and <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a></div>
 <div class="paper_title">Kernel-Based Just-In-Time Learning for Passing Expectation Propagation Messages</div>
+<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, <a href="http://homepages.inf.ed.ac.uk/s0677090/">Nicolas Heess</a>, <a href="http://arkitus.com/">S. M. Ali Eslami</a>, <a href="http://www.gatsby.ucl.ac.uk/~balaji/">Balaji Lakshminarayanan</a>, <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a>, and <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a></div>
 <span class="submit_to">arXiv:1503.02551</span>, 2015. 
 <div class="links">Link: 
 <a class="wj_http" href="http://arxiv.org/abs/1503.02551">http</a>
@@ -89,8 +89,8 @@ Implementation is available in Matlab. (03/2013)
 </div>
 
 <div class="paper"> 
-<div class="author_list"><a href="http://www.gatsby.ucl.ac.uk/~mijung/">Mijung Park</a>, <b>Wittawat Jitkrittum</b>, and <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a></div>
 <div class="paper_title">K2-ABC: Approximate Bayesian Computation with Infinite Dimensional Summary Statistics via Kernel Embeddings</div>
+<div class="author_list"><a href="http://www.gatsby.ucl.ac.uk/~mijung/">Mijung Park</a>, <b>Wittawat Jitkrittum</b>, and <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a></div>
 <span class="submit_to">arXiv:1502.02558</span>, 2015. 
 <div class="links">Link: 
 <a class="wj_http" href="http://arxiv.org/abs/1502.02558">http</a>
@@ -108,8 +108,8 @@ Implementation is available in Matlab. (03/2013)
 </div>
 
 <div class="paper"> 
-<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, and <a href="http://homepages.inf.ed.ac.uk/s0677090/">Nicolas Heess</a></div>
 <div class="paper_title">Passing Expectation Propagation Messages with Kernel Methods</div>
+<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, and <a href="http://homepages.inf.ed.ac.uk/s0677090/">Nicolas Heess</a></div>
 <span class="submit_to">arXiv:1501.00375</span>, 2015. 
 <div class="links">Link: 
 <a class="wj_http" href="http://arxiv.org/abs/1501.00375">http</a>
@@ -128,9 +128,9 @@ Implementation is available in Matlab. (03/2013)
 </div>
 
 <div class="paper"> 
-<div class="author_list"><a href="http://www.makotoyamada-ml.com/">Makoto Yamada</a>, <b>Wittawat Jitkrittum</b>, <a href="http://cs.brown.edu/~ls/">Leonid Sigal</a>, <a href="http://www.cs.cmu.edu/~epxing/">Eric P. Xing</a>, and <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a></div>
 <div class="paper_title">High-Dimensional Feature Selection by Feature-Wise Kernelized
 Lasso</div>
+<div class="author_list"><a href="http://www.makotoyamada-ml.com/">Makoto Yamada</a>, <b>Wittawat Jitkrittum</b>, <a href="http://cs.brown.edu/~ls/">Leonid Sigal</a>, <a href="http://www.cs.cmu.edu/~epxing/">Eric P. Xing</a>, and <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a></div>
 <span class="submit_to">Neural Computation</span>, 2014. 
 <div class="links">Link: 
 <a class="wj_http" href="http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00537#.U9O7Idtsylg">http</a>
@@ -156,8 +156,8 @@ Lasso},
 </div>
 
 <div class="paper"> 
-<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://sugiyama-www.cs.titech.ac.jp/~hachiya/">Hirotaka Hachiya</a>, and <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a></div>
 <div class="paper_title">Feature Selection via $\ell_1$-Penalized Squared-Loss Mutual Information</div>
+<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://sugiyama-www.cs.titech.ac.jp/~hachiya/">Hirotaka Hachiya</a>, and <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a></div>
 <span class="submit_to">IEICE Transactions</span>, 2013. 
 <div class="links">Link: 
 <a class="wj_pdf" href="http://wittawat.com/pages/files/L1LSMI.pdf">pdf</a>
@@ -177,9 +177,9 @@ Lasso},
 </div>
 
 <div class="paper"> 
-<div class="author_list"><a href="http://sugiyama-www.cs.titech.ac.jp/~gang/">Gang Niu</a>, <b>Wittawat Jitkrittum</b>, <a href="https://sites.google.com/site/daibohr/">Bo Dai</a>, <a href="http://sugiyama-www.cs.titech.ac.jp/~hachiya/">Hirotaka Hachiya</a>, and <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a></div>
 <div class="paper_title">Squared-loss Mutual Information Regularization: A Novel Information-theoretic
 Approach to Semi-supervised Learning</div>
+<div class="author_list"><a href="http://sugiyama-www.cs.titech.ac.jp/~gang/">Gang Niu</a>, <b>Wittawat Jitkrittum</b>, <a href="https://sites.google.com/site/daibohr/">Bo Dai</a>, <a href="http://sugiyama-www.cs.titech.ac.jp/~hachiya/">Hirotaka Hachiya</a>, and <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a></div>
 <span class="submit_to">ICML, JMLR W & CP</span>, 2013. 
 <div class="links">Link: 
 <a class="wj_pdf" href="http://jmlr.org/proceedings/papers/v28/niu13.pdf">pdf</a>
@@ -200,8 +200,8 @@ Approach to Semi-supervised Learning},
 </div>
 
 <div class="paper"> 
-<div class="author_list"><b>Wittawat Jitkrittum</b>, Choochart Haruechaiyasak, and Thanaruk Theeramunkong</div>
 <div class="paper_title">QAST: Question Answering System for Thai Wikipedia</div>
+<div class="author_list"><b>Wittawat Jitkrittum</b>, Choochart Haruechaiyasak, and Thanaruk Theeramunkong</div>
 <span class="submit_to">Proceedings of the 2009 Workshop on Knowledge and Reasoning for Answering
 Questions</span>, 2009. 
 <div class="links">Link: 
@@ -224,9 +224,9 @@ Questions},
 </div>
 
 <div class="paper"> 
-<div class="author_list">Choochart Haruechaiyasak, <b>Wittawat Jitkrittum</b>, Chatchawal Sangkeettrakarn, and Chaianun Damrongrat</div>
 <div class="paper_title">Implementing News Article Category Browsing Based on Text Categorization
 Technique</div>
+<div class="author_list">Choochart Haruechaiyasak, <b>Wittawat Jitkrittum</b>, Chatchawal Sangkeettrakarn, and Chaianun Damrongrat</div>
 <span class="submit_to">Web Intelligence/IAT Workshops</span>, 2008. 
 <div class="links">Link: 
 <a class="wj_http" href="http://dx.doi.org/10.1109/WIIAT.2008.61">http</a>
@@ -247,8 +247,8 @@ Technique},
 </div>
 
 <div class="paper"> 
-<div class="author_list">Choochart Haruechaiyasak, Chatchawal Sangkeettrakarn, and <b>Wittawat Jitkrittum</b></div>
 <div class="paper_title">Managing Offline Educational Web Contents with Search Engine Tools</div>
+<div class="author_list">Choochart Haruechaiyasak, Chatchawal Sangkeettrakarn, and <b>Wittawat Jitkrittum</b></div>
 <span class="submit_to">ICADL</span>, 2007. 
 <div class="links">Link: 
 <a class="wj_http" href="http://dx.doi.org/10.1007/978-3-540-77094-7_56">http</a>
@@ -268,5 +268,4 @@ Jitkrittum},
 </div>
 
 </div> 
-
 
