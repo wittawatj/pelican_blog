@@ -58,16 +58,20 @@ Implementation is available in Matlab. (03/2013)
 
     // The keyword "jQuery" is needed because of "noConflict(..)"
     jQuery(document).ready(function(){
-        $(".bibsrc").slideUp();
+        
+        $(".bibsrc").css("display", "none");
+
+        $(".bibsrc").slideUp(1);
 
         $(".biblink").click(function(){
             $(this).parents(".paper").children(".bibsrc").slideToggle(100) ;
         });
+
     });
 
 </script>
 
-<div class="publications"> 
+<div class="publications" > 
 
 <div class="paper"> 
 <div class="paper_title">Kernel-Based Just-In-Time Learning for Passing Expectation Propagation Messages</div>
