@@ -16,6 +16,7 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
+* [Mean Field Methods](files/slides/waijor_mean_field.pdf). 20 Apr 2015.
 * [Sum-Product, Bethe Approximation](files/slides/waijor_bethe_kikuchi_mljc.pdf). 
     16 Feb 2015.
 
