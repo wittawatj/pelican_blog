@@ -7,6 +7,8 @@ This page contains selected talks I have given.
 ### Research 
 * [Just-In-Time Learning for Passing EP
   Messages](files/slides/kjit_ep_research.pdf). 27 Apr 2015.
+* [Feature Selection via $\ell_1$-penalized Squared-loss Mutual
+  Information](files/slides/master_l1lsmi_slides.pdf). 7 Feb 2012.
 
 ### Gatsby tea talks 
 
