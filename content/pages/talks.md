@@ -4,6 +4,10 @@ Slug: talks
 
 This page contains selected talks I have given.
 
+### Research 
+* [Just-In-Time Learning for Passing EP
+  Messages](files/slides/kjit_ep_research.pdf). 27 Apr 2015.
+
 ### Gatsby tea talks 
 
 * [K2-ABC: Approximate Bayesian Computation with Kernel
