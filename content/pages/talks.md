@@ -22,6 +22,8 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
+* [Deep Exponential Families](files/slides/deep_expfam.pdf). The paper appeared in
+  AISTATS 2015. 18 May 2015.  
 * [Mean Field Methods](files/slides/waijor_mean_field.pdf). 20 Apr 2015.
 * [Sum-Product, Bethe Approximation](files/slides/waijor_bethe_kikuchi_mljc.pdf). 
     16 Feb 2015.

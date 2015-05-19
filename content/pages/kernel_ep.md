@@ -13,7 +13,7 @@ operator is done online during EP.  The operator is termed **KJIT** for
 
 
 Short description of the project can be found in [our
-poster](files/kjit_dali2015_poster.pdf). 
+poster](files/kjit_dali2015_poster.pdf) or this [presentation slides](files/slides/kjit_ep_research.pdf). 
 Full details are in our [paper](http://arxiv.org/abs/1503.02551).
 
     Wittawat Jitkrittum, Arthur Gretton, Nicolas Heess, 
