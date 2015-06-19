@@ -50,6 +50,10 @@ I also maintain a <a href="http://wittawat.com/mljc">web site</a> for Gatsby's m
 ## News
 <div class="news">
 
+* **8 Jun 2015**. [Bayesian Manifold Learning: Locally Linear Latent Variable
+Model (LL-LVM)](http://arxiv.org/abs/1410.6791): a probabilistic model for
+non-linear manifold discovery.
+
 * **9 Mar 2015**. [Kernel-Based Just-In-Time Learning for Passing Expectation
 Propagation Messages](pages/kernel_ep.html): a fast, online algorithm for
 nonparametric learning of EP message updates. Source code available
