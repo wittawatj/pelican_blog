@@ -14,6 +14,7 @@ DEFAULT_LANG = u'en'
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
+FEED_MAX_ITEMS = 20
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
@@ -85,3 +86,4 @@ TWITTER_WIDGET_ID = '422661360594329601'
 SHOW_ARTICLE_CATEGORY = False
 CC_LICENSE = "CC-BY"
 
+SUMMARY_MAX_LENGTH = 60
