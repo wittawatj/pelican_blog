@@ -11,6 +11,11 @@ Slug: interesting
 * [Ecole Centrale Paris: Introduction to Functional Analysis](https://class.coursera.org/functionalanalysis-001) by John Cagnol, Anna Rozanova-Pierrat. On Coursera.
 * [Stanford: Probabilistic Graphical Models](https://www.coursera.org/course/pgm) by Daphne Koller. On Coursera.
 * [Gatsby Unit: Probabilistic and Unsupervised Learning](http://www.gatsby.ucl.ac.uk/teaching/courses/ml1-2013.html) by Maneesh Sahani. Good slides for reference.
+* [CS260: Machine Learning Theory](http://www.jennwv.com/courses/F11.html) by
+  Jenn Wortman Vaughan.
+* [CMU CS 7545 Machine Learning
+  Theory](http://www.cs.cmu.edu/~ninamf/ML13/index.html) by Maria Florina
+Balcan
 
 ## Free books
 * [Reinforcement Learning: An Introduction](http://webdocs.cs.ualberta.ca/~sutton/book/the-book.html) by Richard S. Sutton and Andrew G. Barto. Second edition available in [PDF](https://www.dropbox.com/s/f4tnuhipchpkgoj/book2012.pdf).
