@@ -12,6 +12,7 @@ This page contains selected talks I have given.
 
 ### Gatsby tea talks 
 
+* [Support Vector Clustering](files/slides/support_vector_clustering.pdf). 31 July 2015.
 * [K2-ABC: Approximate Bayesian Computation with Kernel
   Embeddings](files/slides/k2abc.pdf). 10 Feb 2015
 * [Public-key Cryptography with RSA](files/slides/rsa_intro.pdf). 18 Nov 2014.
