@@ -23,6 +23,7 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
+* [Landmarking Manifolds with Gaussian Processes](files/slides/landmarking_manifolds_gp.pdf). 4 Aug 2015.
 * [Deep Exponential Families](files/slides/deep_expfam.pdf). The paper appeared in
   AISTATS 2015. 18 May 2015.  
 * [Mean Field Methods](files/slides/waijor_mean_field.pdf). 20 Apr 2015.
