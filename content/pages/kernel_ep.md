@@ -14,7 +14,8 @@ operator is done online during EP.  The operator is termed **KJIT** for
 
 Short description of the project can be found in [our
 poster](files/kjit_dali2015_poster.pdf) or this [presentation slides](files/slides/kjit_ep_research.pdf). 
-Full details are in our [paper](http://arxiv.org/abs/1503.02551).
+Full details are in our [UAI 2015 paper](http://auai.org/uai2015/proceedings/papers/235.pdf).
+Supplementary matrial is [here](http://auai.org/uai2015/proceedings/supp/239_supp.pdf).
 
     Wittawat Jitkrittum, Arthur Gretton, Nicolas Heess, 
     S. M. Ali Eslami, Balaji Lakshminarayanan, Dino Sejdinovic, and Zoltan Szabo
