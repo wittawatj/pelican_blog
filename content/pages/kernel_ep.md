@@ -20,7 +20,7 @@ Supplementary matrial is [here](http://auai.org/uai2015/proceedings/supp/239_sup
     Wittawat Jitkrittum, Arthur Gretton, Nicolas Heess, 
     S. M. Ali Eslami, Balaji Lakshminarayanan, Dino Sejdinovic, and Zoltan Szabo
     "Kernel-Based Just-In-Time Learning for Passing Expectation Propagation Messages"
-    arXiv:1503.02551, 2015
+    UAI, 2015
 
 ## Code 
 All the code is available on the project's [github

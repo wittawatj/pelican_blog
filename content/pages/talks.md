@@ -12,6 +12,7 @@ This page contains selected talks I have given.
 
 ### Gatsby tea talks 
 
+* [Optimal Dating Strategy](files/slides/secretary_problem.pdf). 22 Oct 2015.
 * [Support Vector Clustering](files/slides/support_vector_clustering.pdf). 31 July 2015.
 * [K2-ABC: Approximate Bayesian Computation with Kernel
   Embeddings](files/slides/k2abc.pdf). 10 Feb 2015
