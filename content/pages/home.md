@@ -16,7 +16,7 @@ div.news {
 }
 </style>
 <p>
-I am a second-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
+I am a third-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
 I received M.Eng. from <a href="http://www.titech.ac.jp/english/">Tokyo Institute of Technology</a> 
 where I worked with <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a> on <a href="pages/l1lsmi.html">supervised feature selection using squared-loss mutual information</a>. 
 Before that I was a research assistant working with <a href="http://www.siit.tu.ac.th/professor_en.php?id=43">Thanaruk Theeramunkong</a> 
@@ -51,6 +51,10 @@ href="http://wittawat.com/feeds/all.rss.xml">here</a>.
 
 ## News
 <div class="news">
+
+* **13 Nov 2015**. We released the code for Locally Linear Latent Variable
+  Model (LL-LVM), which was accepted to NIPS 2015. 
+  Check our Matlab code [here on Github](https://github.com/mijungi/lllvm).
 
 * **8 Jun 2015**. [Bayesian Manifold Learning: Locally Linear Latent Variable
 Model (LL-LVM)](http://arxiv.org/abs/1410.6791): a probabilistic model for
