@@ -24,6 +24,8 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
+* [On the High-dimensional Power of Linear-time Kernel
+Two-Sample Testing under Mean-shift Alternatives](files/highd_power_mmd_test.pdf). 23 Nov 2015.
 * [Landmarking Manifolds with Gaussian Processes](files/slides/landmarking_manifolds_gp.pdf). 4 Aug 2015.
 * [Deep Exponential Families](files/slides/deep_expfam.pdf). The paper appeared in
   AISTATS 2015. 18 May 2015.  
