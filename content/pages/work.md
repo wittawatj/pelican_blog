@@ -71,19 +71,38 @@ Implementation is available in Matlab. (03/2013)
 
 </script>
 
-<div class="publications" > 
+<div class="publications"> 
+
+<div class="paper"> 
+<div class="paper_title">Bayesian Manifold Learning: The Locally Linear Latent Variable Model</div>
+<div class="author_list"><a href="http://www.gatsby.ucl.ac.uk/~mijung/">Mijung Park</a>, <b>Wittawat Jitkrittum</b>, Ahmad Qamar, <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a>, Lars Buesing, and Maneesh Sahani</div>
+<span class="submit_to">NIPS</span>, 2015. 
+<div class="links">Link: 
+<a class="wj_http" href="http://arxiv.org/abs/1410.6791">http</a>
+<a class="biblink">bib</a> 
+</div> <!-- end links -->
+<pre class="bibsrc">@inproceedings{Park2015,
+ author = {Mijung Park and Wittawat Jitkrittum and Ahmad Qamar and  Zoltán Szabó and Lars Buesing and  Maneesh Sahani},
+ booktitle = {NIPS},
+ link = {http://arxiv.org/abs/1410.6791},
+ title = {Bayesian Manifold Learning: The Locally Linear Latent Variable Model},
+ year = {2015}
+}
+
+</pre><!-- end bib source -->
+</div>
 
 <div class="paper"> 
 <div class="paper_title">Kernel-Based Just-In-Time Learning for Passing Expectation Propagation Messages</div>
 <div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, <a href="http://homepages.inf.ed.ac.uk/s0677090/">Nicolas Heess</a>, <a href="http://arkitus.com/">S. M. Ali Eslami</a>, <a href="http://www.gatsby.ucl.ac.uk/~balaji/">Balaji Lakshminarayanan</a>, <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a>, and <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a></div>
-<span class="submit_to">arXiv:1503.02551</span>, 2015. 
+<span class="submit_to">UAI</span>, 2015. 
 <div class="links">Link: 
 <a class="wj_http" href="http://arxiv.org/abs/1503.02551">http</a>
 <a class="biblink">bib</a> 
 </div> <!-- end links -->
-<pre class="bibsrc">@article{jitkrittum_kernel-based_2015,
+<pre class="bibsrc">@inproceedings{jitkrittum_kernel-based_2015,
  author = {Jitkrittum, Wittawat and Gretton, Arthur and Heess, Nicolas and Eslami, S. M. Ali and Lakshminarayanan, Balaji and Sejdinovic, Dino and Szabó, Zoltán},
- journal = {arXiv:1503.02551},
+ booktitle = {UAI},
  link = {http://arxiv.org/abs/1503.02551},
  title = {Kernel-{Based} {Just}-{In}-{Time} {Learning} for {Passing} {Expectation} {Propagation} {Messages}},
  year = {2015}
@@ -272,4 +291,3 @@ Jitkrittum},
 </div>
 
 </div> 
-
