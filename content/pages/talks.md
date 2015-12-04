@@ -5,6 +5,7 @@ Slug: talks
 This page contains selected talks I have given.
 
 ### Research 
+* [Locally Linear Latent Variable Model](files/slides/csml_lllvm.pdf). 4 Dec 2015.
 * [Just-In-Time Learning for Passing EP
   Messages](files/slides/kjit_ep_research.pdf). 27 Apr 2015.
 * [Feature Selection via $\ell_1$-penalized Squared-loss Mutual
