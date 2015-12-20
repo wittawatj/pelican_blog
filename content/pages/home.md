@@ -16,6 +16,7 @@ div.news {
 }
 </style>
 <p>
+<img src="pages/files/wittawat_avatar.png" width="150" style="float: left;" >
 I am a third-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
 I received M.Eng. from <a href="http://www.titech.ac.jp/english/">Tokyo Institute of Technology</a> 
 where I worked with <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a> on <a href="pages/l1lsmi.html">supervised feature selection using squared-loss mutual information</a>. 
