@@ -4,6 +4,12 @@ Slug: work
 
 ## Projects
 
+* [Locally Linear Latent Variable Model
+  (LL-LVM)](https://github.com/mijungi/lllvm) -- LL-LVM is a probabilistic
+model for non-linear manifold discovery that describes a joint distribution
+over observations, their manifold coordinates and locally linear maps
+conditioned on a set of neighbourhood relationships. (09/2015)
+
 * [Learning to Pass EP Messages](kernel_ep.html) -- In this project, we propose to learn a kernel-based message operator 
 that replaces the multivariate integral required in classical EP to compute an outgoing message given incoming messages.
 The operator allows fast computations of outgoing messages and can be updated online cheaply during EP inference. (03/2015)
