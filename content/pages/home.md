@@ -53,6 +53,11 @@ href="http://wittawat.com/feeds/all.rss.xml">here</a>.
 ## News
 <div class="news">
 
+* **Dec 2015**. [K2-ABC: Approximate Bayesian Computation with Infinite
+  Dimensional Summary Statistics via Kernel
+Embeddings](http://arxiv.org/abs/1502.02558): summary statistic free
+approximate Bayesian computation with kernel embeddings. Accepted to AISTATS 2016.
+
 * **13 Nov 2015**. We released the code for Locally Linear Latent Variable
   Model (LL-LVM), which was accepted to NIPS 2015. 
   Check our Matlab code [here on Github](https://github.com/mijungi/lllvm).
@@ -66,10 +71,6 @@ Propagation Messages](pages/kernel_ep.html): a fast, online algorithm for
 nonparametric learning of EP message updates. Source code available
 [here](https://github.com/wittawatj/kernel-ep). 
 
-* **9 Feb 2015**. [K2-ABC: Approximate Bayesian Computation with
-Infinite Dimensional Summary Statistics via Kernel
-Embeddings](http://arxiv.org/abs/1502.02558): summary statistic free
-approximate Bayesian computation with kernel embeddings. 
 
 </div>
 <!--<p>-->
