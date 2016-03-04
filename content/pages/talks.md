@@ -26,6 +26,7 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
+* [Bayesian Indirect Inference Using a Parametric Auxiliary Model](files/slides/abc_indirect_inference.pdf). 29 Feb 2016. 
 * [On the High-dimensional Power of Linear-time Kernel
 Two-Sample Testing under Mean-shift Alternatives](files/highd_power_mmd_test.pdf). 23 Nov 2015.
 * [Landmarking Manifolds with Gaussian Processes](files/slides/landmarking_manifolds_gp.pdf). 4 Aug 2015.
