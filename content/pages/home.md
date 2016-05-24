@@ -52,6 +52,13 @@ href="http://wittawat.com/feeds/all.rss.xml">here</a>.
 
 ## News
 <div class="news">
+<!-- -->
+
+* **24 May 2016**. [Interpretable Distribution Features with Maximum Testing
+  Power](http://arxiv.org/abs/1605.06796): a linear-time nonparametric
+two-sample test which returns a set of local features indicating why the
+null hypothesis is rejected. Python code available [on
+Github](https://github.com/wittawatj/interpretable-test).
 
 * **Dec 2015**. [K2-ABC: Approximate Bayesian Computation with Infinite
   Dimensional Summary Statistics via Kernel

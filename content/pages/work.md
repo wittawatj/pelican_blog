@@ -4,6 +4,12 @@ Slug: work
 
 ## Projects
 
+* [Interpretable Two-Sample
+  Test](https://github.com/wittawatj/interpretable-test) -- The goal of this
+project is to learn a set of features to distinguish two given distributions P
+and Q, as observed through two samples. This task is formulated as a two-sample
+test problem. (05/2016)
+
 * [Locally Linear Latent Variable Model
   (LL-LVM)](https://github.com/mijungi/lllvm) -- LL-LVM is a probabilistic
 model for non-linear manifold discovery that describes a joint distribution
@@ -80,11 +86,54 @@ Implementation is available in Matlab. (03/2013)
 <div class="publications"> 
 
 <div class="paper"> 
+<div class="paper_title">Interpretable Distribution Features with Maximum Testing Power</div>
+<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a>, Kacper Chwialkowski, and <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a></div>
+<span class="submit_to">arXiv:1605.06796</span>, 2016. 
+<div class="links">Link: 
+<a class="wj_http" href="http://arxiv.org/abs/1605.06796">http</a>
+<a class="wj_code" href="https://github.com/wittawatj/interpretable-test">code</a>
+<a class="biblink">bib</a> 
+</div> <!-- end links -->
+<pre class="bibsrc">@article{fotest_arxiv2016,
+ author = {Wittawat Jitkrittum and Zoltán Szabó and Kacper Chwialkowski and Arthur Gretton},
+ journal = {{arXiv}:1605.06796},
+ link = {http://arxiv.org/abs/1605.06796},
+ title = {Interpretable Distribution Features with Maximum Testing Power},
+ wj_code = {https://github.com/wittawatj/interpretable-test},
+ year = {2016}
+}
+
+</pre><!-- end bib source -->
+</div>
+
+<div class="paper"> 
+<div class="paper_title">K2-ABC: Approximate Bayesian Computation with Infinite Dimensional Summary Statistics via Kernel Embeddings</div>
+<div class="author_list"><a href="http://www.gatsby.ucl.ac.uk/~mijung/">Mijung Park</a>, <b>Wittawat Jitkrittum</b>, and <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a></div>
+<span class="submit_to">AISTATS</span>, 2016. 
+<div class="links">Link: 
+<a class="wj_http" href="http://jmlr.org/proceedings/papers/v51/park16.html">http</a>
+<a class="wj_code" href="https://github.com/wittawatj/k2abc">code</a>
+<a class="biblink">bib</a> 
+</div> <!-- end links -->
+<pre class="bibsrc">@inproceedings{part_k2abc_2015_arxiv,
+ author = {Mijung Park and Wittawat Jitkrittum and Dino Sejdinovic},
+ booktitle = {AISTATS},
+ link = {http://jmlr.org/proceedings/papers/v51/park16.html},
+ title = {{K2-ABC}: Approximate {B}ayesian Computation with Infinite Dimensional Summary Statistics via Kernel Embeddings},
+ wj_code = {https://github.com/wittawatj/k2abc},
+ year = {2016}
+}
+
+</pre><!-- end bib source -->
+</div>
+
+<div class="paper"> 
 <div class="paper_title">Bayesian Manifold Learning: The Locally Linear Latent Variable Model</div>
 <div class="author_list"><a href="http://www.gatsby.ucl.ac.uk/~mijung/">Mijung Park</a>, <b>Wittawat Jitkrittum</b>, Ahmad Qamar, <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a>, Lars Buesing, and Maneesh Sahani</div>
 <span class="submit_to">NIPS</span>, 2015. 
 <div class="links">Link: 
 <a class="wj_http" href="http://arxiv.org/abs/1410.6791">http</a>
+<a class="wj_code" href="https://github.com/mijungi/lllvm">code</a>
 <a class="biblink">bib</a> 
 </div> <!-- end links -->
 <pre class="bibsrc">@inproceedings{Park2015,
@@ -92,6 +141,7 @@ Implementation is available in Matlab. (03/2013)
  booktitle = {NIPS},
  link = {http://arxiv.org/abs/1410.6791},
  title = {Bayesian Manifold Learning: The Locally Linear Latent Variable Model},
+ wj_code = {https://github.com/mijungi/lllvm},
  year = {2015}
 }
 
@@ -104,6 +154,7 @@ Implementation is available in Matlab. (03/2013)
 <span class="submit_to">UAI</span>, 2015. 
 <div class="links">Link: 
 <a class="wj_http" href="http://arxiv.org/abs/1503.02551">http</a>
+<a class="wj_code" href="https://github.com/wittawatj/kernel-ep">code</a>
 <a class="biblink">bib</a> 
 </div> <!-- end links -->
 <pre class="bibsrc">@inproceedings{jitkrittum_kernel-based_2015,
@@ -111,45 +162,7 @@ Implementation is available in Matlab. (03/2013)
  booktitle = {UAI},
  link = {http://arxiv.org/abs/1503.02551},
  title = {Kernel-{Based} {Just}-{In}-{Time} {Learning} for {Passing} {Expectation} {Propagation} {Messages}},
- year = {2015}
-}
-
-</pre><!-- end bib source -->
-</div>
-
-<div class="paper"> 
-<div class="paper_title">K2-ABC: Approximate Bayesian Computation with Infinite Dimensional Summary Statistics via Kernel Embeddings</div>
-<div class="author_list"><a href="http://www.gatsby.ucl.ac.uk/~mijung/">Mijung Park</a>, <b>Wittawat Jitkrittum</b>, and <a href="http://www.stats.ox.ac.uk/~sejdinov/">Dino Sejdinovic</a></div>
-<span class="submit_to">arXiv:1502.02558</span>, 2015. 
-<div class="links">Link: 
-<a class="wj_http" href="http://arxiv.org/abs/1502.02558">http</a>
-<a class="biblink">bib</a> 
-</div> <!-- end links -->
-<pre class="bibsrc">@article{part_k2abc_2015_arxiv,
- author = {Mijung Park and Wittawat Jitkrittum and Dino Sejdinovic},
- journal = {{arXiv}:1502.02558},
- link = {http://arxiv.org/abs/1502.02558},
- title = {{K2-ABC}: Approximate {B}ayesian Computation with Infinite Dimensional Summary Statistics via Kernel Embeddings},
- year = {2015}
-}
-
-</pre><!-- end bib source -->
-</div>
-
-<div class="paper"> 
-<div class="paper_title">Passing Expectation Propagation Messages with Kernel Methods</div>
-<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, and <a href="http://homepages.inf.ed.ac.uk/s0677090/">Nicolas Heess</a></div>
-<span class="submit_to">arXiv:1501.00375</span>, 2015. 
-<div class="links">Link: 
-<a class="wj_http" href="http://arxiv.org/abs/1501.00375">http</a>
-<a class="biblink">bib</a> 
-</div> <!-- end links -->
-<pre class="bibsrc">@article{jitkrittum_passing_2015,
- annote = {Comment: Accepted to Advances in Variational Inference, {NIPS} 2014 Workshop},
- author = {Wittawat Jitkrittum and Arthur Gretton and Nicolas Heess},
- journal = {{arXiv}:1501.00375},
- link = {http://arxiv.org/abs/1501.00375},
- title = {Passing Expectation Propagation Messages with Kernel Methods},
+ wj_code = {https://github.com/wittawatj/kernel-ep},
  year = {2015}
 }
 
@@ -190,6 +203,7 @@ Lasso},
 <span class="submit_to">IEICE Transactions</span>, 2013. 
 <div class="links">Link: 
 <a class="wj_pdf" href="http://wittawat.com/pages/files/L1LSMI.pdf">pdf</a>
+<a class="wj_code" href="https://github.com/wittawatj/l1lsmi">code</a>
 <a class="biblink">bib</a> 
 </div> <!-- end links -->
 <pre class="bibsrc">@article{Jitkrittum2013,
@@ -199,6 +213,7 @@ Lasso},
  pages = {1513-1524},
  title = {Feature Selection via $\ell_1$-Penalized Squared-Loss Mutual Information},
  volume = {96-D},
+ wj_code = {https://github.com/wittawatj/l1lsmi},
  year = {2013}
 }
 
