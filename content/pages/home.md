@@ -54,7 +54,11 @@ href="http://wittawat.com/feeds/all.rss.xml">here</a>.
 <div class="news">
 <!-- -->
 
-* **24 May 2016**. [Interpretable Distribution Features with Maximum Testing
+* **Aug 2016**. [Interpretable Distribution Features with Maximum Testing
+  Power](http://arxiv.org/abs/1605.06796) is accepted to NIPS 2016 as a full oral 
+presentation.
+
+* **May 2016**. [Interpretable Distribution Features with Maximum Testing
   Power](http://arxiv.org/abs/1605.06796): a linear-time nonparametric
 two-sample test which returns a set of local features indicating why the
 null hypothesis is rejected. Python code available [on
@@ -65,15 +69,15 @@ Github](https://github.com/wittawatj/interpretable-test).
 Embeddings](http://arxiv.org/abs/1502.02558): summary statistic free
 approximate Bayesian computation with kernel embeddings. Accepted to AISTATS 2016.
 
-* **13 Nov 2015**. We released the code for Locally Linear Latent Variable
+* **Nov 2015**. We released the code for Locally Linear Latent Variable
   Model (LL-LVM), which was accepted to NIPS 2015. 
   Check our Matlab code [here on Github](https://github.com/mijungi/lllvm).
 
-* **8 Jun 2015**. [Bayesian Manifold Learning: Locally Linear Latent Variable
+* **Jun 2015**. [Bayesian Manifold Learning: Locally Linear Latent Variable
 Model (LL-LVM)](http://arxiv.org/abs/1410.6791): a probabilistic model for
 non-linear manifold discovery.
 
-* **9 Mar 2015**. [Kernel-Based Just-In-Time Learning for Passing Expectation
+* **Mar 2015**. [Kernel-Based Just-In-Time Learning for Passing Expectation
 Propagation Messages](pages/kernel_ep.html): a fast, online algorithm for
 nonparametric learning of EP message updates. Source code available
 [here](https://github.com/wittawatj/kernel-ep). 
