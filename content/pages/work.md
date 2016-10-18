@@ -86,6 +86,27 @@ Implementation is available in Matlab. (03/2013)
 <div class="publications"> 
 
 <div class="paper"> 
+<div class="paper_title">An Adaptive Test of Independence with Analytic Kernel Embeddings</div>
+<div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltan Szabo</a>, and <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a></div>
+<span class="submit_to">arXiv:1610.04782</span>, 2016. 
+<div class="links">Link: 
+<a class="wj_http" href="https://arxiv.org/abs/1610.04782">http</a>
+<a class="wj_code" href="https://github.com/wittawatj/fsic-test">code</a>
+<a class="biblink">bib</a> 
+</div> <!-- end links -->
+<pre class="bibsrc">@article{jitkrittum+al:2016:indtest,
+ author = {Wittawat Jitkrittum and Zoltan Szabo and Arthur Gretton},
+ journal = {{arXiv}:1610.04782},
+ link = {https://arxiv.org/abs/1610.04782},
+ title = {An Adaptive Test of Independence with Analytic Kernel Embeddings},
+ wj_code = {https://github.com/wittawatj/fsic-test},
+ year = {2016}
+}
+
+</pre><!-- end bib source -->
+</div>
+
+<div class="paper"> 
 <div class="paper_title">Interpretable Distribution Features with Maximum Testing Power</div>
 <div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltán Szabó</a>, Kacper Chwialkowski, and <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a></div>
 <span class="submit_to">arXiv:1605.06796</span>, 2016. 

@@ -54,6 +54,10 @@ href="http://wittawat.com/feeds/all.rss.xml">here</a>.
 <div class="news">
 <!-- -->
 
+* **Oct 2016**. [An Adaptive Test of Independence with Analytic Kernel
+  Embeddings](https://arxiv.org/abs/1610.04782), a fast
+nonparametric independence test. Python code [here](https://github.com/wittawatj/fsic-test).
+
 * **Aug 2016**. [Interpretable Distribution Features with Maximum Testing
   Power](http://arxiv.org/abs/1605.06796) is accepted to NIPS 2016 as a full oral 
 presentation.
