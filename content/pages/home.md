@@ -60,7 +60,7 @@ nonparametric independence test. Python code [here](https://github.com/wittawatj
 
 * **Aug 2016**. [Interpretable Distribution Features with Maximum Testing
   Power](http://arxiv.org/abs/1605.06796) is accepted to NIPS 2016 as a full oral 
-presentation.
+presentation. See our 2-minute introduction video [here](http://wittawatj.github.io/interpretable-test/).
 
 * **May 2016**. [Interpretable Distribution Features with Maximum Testing
   Power](http://arxiv.org/abs/1605.06796): a linear-time nonparametric
