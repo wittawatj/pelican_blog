@@ -17,7 +17,7 @@ div.news {
 </style>
 <p>
 <!--<img src="pages/files/wittawat_avatar.png" width="150" style="float: left;" >-->
-I am a third-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
+I am a fourth-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
 I received M.Eng. from <a href="http://www.titech.ac.jp/english/">Tokyo Institute of Technology</a> 
 where I worked with <a href="http://www.ms.k.u-tokyo.ac.jp/index.html">Masashi Sugiyama</a> on <a href="pages/l1lsmi.html">supervised feature selection using squared-loss mutual information</a>. 
 Before that I was a research assistant working with <a href="http://www.siit.tu.ac.th/professor_en.php?id=43">Thanaruk Theeramunkong</a> 
@@ -53,6 +53,8 @@ href="http://wittawat.com/feeds/all.rss.xml">here</a>.
 ## News
 <div class="news">
 <!-- -->
+
+* **Nov 2016** . A new paper. [Cognitive Bias in Ambiguity Judgements: Using Computational Models to Dissect the Effects of Mild Mood Manipulation in Humans](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0165840) in PLOS One.
 
 * **Oct 2016**. [An Adaptive Test of Independence with Analytic Kernel
   Embeddings](https://arxiv.org/abs/1610.04782), a fast

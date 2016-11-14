@@ -86,6 +86,27 @@ Implementation is available in Matlab. (03/2013)
 <div class="publications"> 
 
 <div class="paper"> 
+<div class="paper_title">Cognitive Bias in Ambiguity Judgements: Using Computational Models to Dissect the Effects of Mild Mood Manipulation in Humans</div>
+<div class="author_list"><a href="http://kyoiigaya.weebly.com/">Kiyohito Iigaya</a>, Aurelie Jolivald, <b>Wittawat Jitkrittum</b>, Iain Gilchrist, <a href="http://www.gatsby.ucl.ac.uk/~dayan/">Peter Dayan</a>, Elizabeth Paul, and Michael Mendl</div>
+<span class="submit_to">PLOS ONE</span>, 2016. 
+<div class="links">Link: 
+<a class="wj_http" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0165840">http</a>
+<a class="biblink">bib</a> 
+</div> <!-- end links -->
+<pre class="bibsrc">@article{iigaya2016,
+ author = {Kiyohito Iigaya and Aurelie Jolivald and Wittawat Jitkrittum and Iain Gilchrist and Peter Dayan and Elizabeth Paul and Michael Mendl},
+ issn = {1932-6203},
+ journal = {PLOS ONE},
+ month = {10},
+ publisher = {Public Library of Science},
+ title = {Cognitive Bias in Ambiguity Judgements: Using Computational Models to Dissect the Effects of Mild Mood Manipulation in Humans},
+ year = {2016}
+}
+
+</pre><!-- end bib source -->
+</div>
+
+<div class="paper"> 
 <div class="paper_title">An Adaptive Test of Independence with Analytic Kernel Embeddings</div>
 <div class="author_list"><b>Wittawat Jitkrittum</b>, <a href="http://www.gatsby.ucl.ac.uk/~szabo/">Zoltan Szabo</a>, and <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a></div>
 <span class="submit_to">arXiv:1610.04782</span>, 2016. 
@@ -333,3 +354,4 @@ Jitkrittum},
 </div>
 
 </div> 
+
