@@ -27,9 +27,14 @@ DISQUS_SITENAME = "wjresearch"
 #LINKS =  (('Pelican', 'http://getpelican.com/'),)
 
 # Social widget
-SOCIAL = (('twitter', 'https://twitter.com/wittawatj'),
+SOCIAL = (('Twitter', 'https://twitter.com/wittawatj'),
           #('google', 'https://plus.google.com/112508555412336958238/'),
-          ('github', 'https://github.com/wittawatj'))
+          ('Github', 'https://github.com/wittawatj'),
+          ('Google Scholar',
+              'https://scholar.google.co.uk/citations?user=D7h5R5kAAAAJ&hl=en'
+              ),
+          ('ArXiv', 'https://arxiv.org/find/stat/1/au:+Jitkrittum_W/0/1/0/all/0/1'),
+          )
 
 DEFAULT_PAGINATION = False
 MENUITEMS = [

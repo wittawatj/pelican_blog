@@ -46,8 +46,7 @@ My works are listed on <a href="pages/work.html">this page</a>.
 I occasionally update <a href="archives.html">my blog</a> summarizing what I learn.
 Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. 
 I also maintain a <a href="http://wittawat.com/mljc">web site</a> for Gatsby's
-machine learning journal club. The RSS feed url for the blog posts is <a
-href="http://wittawat.com/feeds/all.rss.xml">here</a>.
+machine learning journal club. 
 </p>
 
 ## News
