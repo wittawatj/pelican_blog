@@ -15,6 +15,7 @@ div.news {
     border-left: 1px solid black;
 }
 </style>
+
 <p>
 <!--<img src="pages/files/wittawat_avatar.png" width="150" style="float: left;" >-->
 I am a fourth-year research student working with <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a> at <a href="http://www.gatsby.ucl.ac.uk/">Gatsby Computational Neuroscience Unit</a>, <a href="http://www.ucl.ac.uk/">UCL</a>.
@@ -47,6 +48,19 @@ I occasionally update <a href="archives.html">my blog</a> summarizing what I lea
 Some photos I have taken are <a href="http://www.flickr.com/photos/wittawatj/">on Flickr</a>. 
 I also maintain a <a href="http://wittawat.com/mljc">web site</a> for Gatsby's
 machine learning journal club. 
+</p>
+
+<h3 style="color:brown">Looking for research opportunities</h3>
+<p>
+I am expected to finish my PhD study in September 2017. I am currently looking
+for jobs with a research component in machine learning. Topics of my interests include
+but not limited to kernel methods (two-sample testing, independence testing),
+approximate Bayesian inference, and the combination of the two. One of my
+career goals is to find a good balance between theory and practice. I release
+the code for all of the machine learning projects I have worked on (see <a
+href="https://github.com/wittawatj">my Github page</a>). If there is a chance
+that I can contribute to your projects on any machine learning topic, please
+get in touch to discuss. My CV is <a href="pages/files/wittawat_cv.pdf">here</a>.
 </p>
 
 ## News

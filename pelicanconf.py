@@ -34,6 +34,7 @@ SOCIAL = (('Twitter', 'https://twitter.com/wittawatj'),
               'https://scholar.google.co.uk/citations?user=D7h5R5kAAAAJ&hl=en'
               ),
           ('ArXiv', 'https://arxiv.org/find/stat/1/au:+Jitkrittum_W/0/1/0/all/0/1'),
+          ('My CV', 'pages/files/wittawat_cv.pdf'),
           )
 
 DEFAULT_PAGINATION = False
