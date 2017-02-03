@@ -14,7 +14,7 @@ This page contains selected talks I have given.
 ### Gatsby tea talks 
 
 * [Some Counterexamples in Probability](files/slides/counterexamples_prob.pdf). 3 Feb 2017.
-* [Determinantal Point Processes for Machine Learning](files/slides/dpp.pdf). 31 Oct 2016.
+* [Least-Squares Two-Sample Test](files/slides/lstt.pdf). 22 July 2016.
 * [9 Matlab Tricks that You Probably Want to Know](files/slides/matlab_tricks.pdf). 17 Dec 2015.
 * [Optimal Dating Strategy](files/slides/secretary_problem.pdf). 22 Oct 2015.
 * [Support Vector Clustering](files/slides/support_vector_clustering.pdf). 31 July 2015.
@@ -28,6 +28,7 @@ This page contains selected talks I have given.
 
 ### Journal club 
 
+* [Determinantal Point Processes for Machine Learning](files/slides/dpp.pdf). 31 Oct 2016.
 * [Bayesian Indirect Inference Using a Parametric Auxiliary Model](files/slides/abc_indirect_inference.pdf). 29 Feb 2016. 
 * [On the High-dimensional Power of Linear-time Kernel
 Two-Sample Testing under Mean-shift Alternatives](files/highd_power_mmd_test.pdf). 23 Nov 2015.
