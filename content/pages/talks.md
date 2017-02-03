@@ -28,7 +28,7 @@ This page contains selected talks I have given.
   Consistency](files/slides/label_propagation.pdf). 8 Apr 2014. 
 
 ### Journal club 
-
+* [Examples are not Enough, Learn to Criticize! Criticism for Interpretability](files/slides/mmd_critic.pdf). 16 Jan 2017.
 * [Determinantal Point Processes for Machine Learning](files/slides/dpp.pdf). 31 Oct 2016.
 * [Bayesian Indirect Inference Using a Parametric Auxiliary Model](files/slides/abc_indirect_inference.pdf). 29 Feb 2016. 
 * [On the High-dimensional Power of Linear-time Kernel
