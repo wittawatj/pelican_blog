@@ -13,6 +13,7 @@ This page contains selected talks I have given.
 
 ### Gatsby tea talks 
 
+* [Some counterexamples in probability](files/slides/counterexamples_prob.pdf). 3 Feb 2017.
 * [9 Matlab Tricks that You Probably Want to Know](files/slides/matlab_tricks.pdf). 17 Dec 2015.
 * [Optimal Dating Strategy](files/slides/secretary_problem.pdf). 22 Oct 2015.
 * [Support Vector Clustering](files/slides/support_vector_clustering.pdf). 31 July 2015.
